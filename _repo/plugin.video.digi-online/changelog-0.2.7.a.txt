@@ -1,0 +1,84 @@
+v 0.2.7
+- Added programmes
+  CNN [EN]
+  SLager TV
+  Fishing & Hunting
+  CBS Reality
+  Cartoon Network
+  Boomerang
+
+v 0.2.6
+- Added programmes
+  Film Cafe
+  TNT
+
+v 0.2.5
+- Fixed playback broken due to changes on Digi-online.ro website
+- Added programmes
+  AXN
+  AXN White
+  AXN Black
+  AXN Spin
+
+v 0.2.4
+- added hidden Digi-Online programmes:
+  Discovery Channel
+  TV5Monde
+  TLC
+  Travel Mix Channel
+  Epop Entertainment
+ (These programmes are not accessible when visiting 'http://www.digi-online.ro/tv/' from a PC/MAC)
+
+v 0.2.3
+- bugfix: fixed playing www.digi24.ro programmes
+
+v 0.2.2
+- code cleanup
+
+v 0.2.1
+- Added EPG info notification (now playing info)
+
+v 0.1.1
+- Programmes (streams) that work:
+  Digi24
+  digi24.ro
+  B1 TV
+  Realitatea TV
+  Romania TV
+  France 24 [EN]
+  Travel Channel
+  Paprika TV
+  Digi Life
+  Digi World
+  Viasat Explorer
+  National Geographic
+  History Channel
+  Viasat History
+  National Geographic Wild
+  BBC Earth
+  Digi Animal World
+  Viasat Nature
+  TV1000
+  UTV
+  Music Channel
+  Kiss TV
+  HitMusic Channel
+  Disney Channel
+  Megamax
+  Nickelodeon
+  Minimax
+  Disney Junior
+  Davinci Learning
+  DigiSport 1
+  DigiSport 2
+  DigiSport 3
+  DigiSport 4
+  EuroSport 1
+  EuroSport 2
+  TVR 1
+  TVR 2
+  Digi24 Oradea
+  Digi24 Brasov
+  Digi24 Cluj
+
+  Digi-Film does not work (DRM)

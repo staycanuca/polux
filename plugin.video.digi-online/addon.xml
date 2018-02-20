@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.digi-online"
+       name="Digi-Online"
+       version="0.2.7.a"
+       provider-name="dexterke, Secret Laboratories">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.common.plugin.cache" version="0.9.1"/>
+    <import addon="script.module.m3u8" version="0.2.10"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live TV - digi-online.ro</summary>
+    <description lang="en">
+    ---- Disclaimer ----
+    The author does not host or own any content found within this Addon.
+    The author is not connected to or in any other way affiliated with Kodi, Team Kodi, the XBMC foundation, RCS RDS SA, digi24.ro or digi-online.ro
+      </description>
+    <disclaimer lang="en">Digi-Online TV programmes are available to play only in Romania</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/dexterke/plugin.video.digi-online</source>
+    <news></news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>

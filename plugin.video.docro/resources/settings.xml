@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<setting id="canal1" type="text" label="Canal 1" default="UCzIroEVNy9l_iKXHvswOt8A"/>
+	<setting id="canal1n" type="text" label="Nume canal 1" default="Canal YT 1"/>
+	<setting id="canal2" type="text" label="Canal " default="UCzIroEVNy9l_iKXHvswOt8A"/>
+	<setting id="canal2n" type="text" label="Nume canal 2" default="Canal YT 2"/>
+	<setting id="canal3" type="text" label="Canal 3" default="UCzIroEVNy9l_iKXHvswOt8A"/>
+	<setting id="canal3n" type="text" label="Nume canal 3" default="Canal YT 3"/>
+	<setting id="canal4" type="text" label="Canal 4" default="UCzIroEVNy9l_iKXHvswOt8A"/>
+	<setting id="canal4n" type="text" label="Nume canal 4" default="Canal YT 4"/>
+	<setting id="canal5" type="text" label="Canal 5" default="UCzIroEVNy9l_iKXHvswOt8A"/>
+	<setting id="canal5n" type="text" label="Nume canal 5" default="Canal YT 5"/>
+</settings>

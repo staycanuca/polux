@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon author="tvaddons" id="plugin.git.browser" name="Git Browser" version="1.0.0b">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+    <extension library="addon.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Easily Install Kodi Addons Directly from GitHub</summary>
+        <description lang="en">Git Browser is the new and improved way to install Kodi addons. Download any Kodi addon, from any developer, in a matter of seconds!</description>
+        <disclaimer lang="en">Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
+</addon>
+
+<addon id="plugin.program.lasubiect" name="La Subiect Wizard" version="1.0.1" provider-name="polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">La Subiect Wizard</summary>
+    <description lang="en">La Subiect Wizard - repo , addonuri, skins</description>
+    <platform>all</platform>
+	<news>Thanks To Aftermath For The Base Of The Wizard You Did A Great Job, I Have Made Some Great Changes And More To Come</news>
+  </extension>
+</addon>
+
+<addon id="plugin.video.digi-online"
+       name="Digi-Online"
+       version="0.2.7.a"
+       provider-name="dexterke, Secret Laboratories">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.common.plugin.cache" version="0.9.1"/>
+    <import addon="script.module.m3u8" version="0.2.10"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live TV - digi-online.ro</summary>
+    <description lang="en">
+    ---- Disclaimer ----
+    The author does not host or own any content found within this Addon.
+    The author is not connected to or in any other way affiliated with Kodi, Team Kodi, the XBMC foundation, RCS RDS SA, digi24.ro or digi-online.ro
+      </description>
+    <disclaimer lang="en">Digi-Online TV programmes are available to play only in Romania</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/dexterke/plugin.video.digi-online</source>
+    <news></news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.docro"
+	name="DocumentareRO"
+	version="0.0.3"
+	provider-name="polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Documentare</summary>
+    <description>O colectie de documentare, in mare parte de pe Youtube.</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.iptvts"
        name="IPTV TS"
        version="1.0.2"
@@ -18,6 +111,68 @@
         <summary lang="en">IPTV TS</summary>
         <description lang="en">Find and play daily IPTV lists in blogs and websites.</description>
     </extension>
+</addon>
+
+<addon id="plugin.video.odkodi" name="Open Directories" version="0.0.2" provider-name="Demo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"  version="3.0.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">A plugin for scraping index sites, choice in settings to grab other info from imdb</summary>
+	<description lang="en">A plugin for playing online lists</description>
+	<disclaimer lang="en">The original author neither hosts or stores any content, the original author has no affiliation with content hosts</disclaimer>
+	<platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.playlistRO" name="Playlist RO" version="1.1.7" provider-name="Polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Playlist RO</summary>
+    <description lang="en">Playlist RO - Playlist Loader clone cu liste romanesti</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.seenowfreezone"
+       name="Seenow Freezone"
+       version="0.0.2"
+       provider-name="polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>based on livestreamspro 2.6.8 by Shani</summary>
+    <description>Seenow Freezone</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.sopcastro"

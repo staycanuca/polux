@@ -1,0 +1,4 @@
+v1.1.8
+-Fixed Debrid Bubbles Saving Data
+-Removed Useless Addon Saved Data Settings
+-Cleaned Up Auto Clean System Addon Settings

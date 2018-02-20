@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="General Settings">
+    <setting label="www.digi-online login" type="lsep"/>
+    <setting label="Login User"        id="login_User"     type="text" default="testUser@rdslink.ro" />
+    <setting label="Login Password"    id="login_Password" type="text" default="testPassword"  option="hidden" />
+    <setting label="Enable User Login" id="login_Enabled"  type="bool" default="false" />
+    <setting type="sep"/>
+    <setting label="Playback" type="lsep"/>
+    <setting label="Preferred Quality" type="labelenum" id="stream_Quality" lvalues="hq|mq|lq"/>
+    <setting label="OSD Info Popup" id="popup_Enabled" type="bool" default="true" />
+    <setting label="OSD EPG Info" id="popup_EPGinfo" type="bool" default="true" />
+    <setting type="sep"/>
+  </category>
+
+  <category label="Hidden Programmes">
+    <setting label="Streaming Server for Hidden Programmes" type="labelenum" id="extra_streamSRV" lvalues="edge24.rdsnet.ro|edge84.rdsnet.ro|cdn02-edge30.rdsnet.ro|cdn01-edge30.rdsnet.ro|s2.220.t1.ro"/>
+    <setting label="Hidden Programmes List" type="lsep"/>
+    <setting label="Discovery Channel"	id="71"	type="bool" default="true" />
+    <setting label="TV5Monde" 		id="75" type="bool" default="true" />
+    <setting label="TLC" 		id="72" type="bool" default="true" />
+    <setting label="Travel Mix Channel" id="74" type="bool" default="false" />
+    <setting label="Epop Entertainment" id="73" type="bool" default="false" />
+    <setting type="sep"/>
+  </category>
+
+  <category label="Debug Options">
+    <setting label="Log File: plugin_video_digi-online.log" type="lsep"/>
+    <setting label="Enable debug" id="debug_Enabled" type="bool" default="false" />
+    <setting label="Save HTTP source code" id="http_log_Enable" type="bool" default="false" />
+    <setting type="sep"/>
+  </category>
+</settings>

@@ -1,0 +1,56 @@
+[
+    {
+        "url": "http://textuploader.com/5h3h0/raw", 
+        "logos": "http://www.manutv.net/wp-content/uploads/", 
+        "image": "http://www.fileayan.com/wp-content/uploads/2015/08/SopCast.jpg", 
+        "name": "Sopcast Romania - necesita Plexus"
+    }, 
+    {
+        "url": "http://pastebin.com/raw/iU5Gdk7t", 
+        "logos": "http://www.manutv.net/wp-content/uploads/", 
+        "image": "http://www.rcs-rds.ro/images/Digi_white-background.png", 
+        "name": "Digi - functioneaza in reteaua RDS"
+    }, 
+    {
+        "url": "http://textuploader.com/5bmxy/raw", 
+        "logos": "http://www.manutv.net/wp-content/uploads/", 
+        "image": "http://www.romanianlawoffice.com/uploads/default/files/taxes-romania.jpg", 
+        "name": "Romania - necesita f4mTester plugin"
+    }, 
+    {
+        "url": "http://pastebin.com/raw.php?i=SiWJjW7b", 
+        "logos": "http://www.manutv.net/wp-content/uploads/", 
+        "image": "https://lh4.ggpht.com/Z0h0WDrLrt8Xw-qPTSSP9qUu8EFqxYJNvZSAVvknjeCY_8X3q_7sYRWRmwAH_ndk=w300", 
+        "name": "Radio Romania"
+    }, 
+    {
+        "url": "http://tv.iptv.ink/iptv.ink", 
+        "logos": "http://logo.iptv.ink/", 
+        "image": "http://3.bp.blogspot.com/-AfWE8Bd0nOI/VkOl3mmHJHI/AAAAAAAAASk/rKMd7sXjkpY/s1600/tvv.jpg", 
+        "name": "International IPTV.ink"
+    }, 
+    {
+        "url": "http://kodilive.eu/tv", 
+        "logos": "http://kodilive.eu/logo/", 
+        "image": "http://3.bp.blogspot.com/-AfWE8Bd0nOI/VkOl3mmHJHI/AAAAAAAAASk/rKMd7sXjkpY/s1600/tvv.jpg", 
+        "name": "International IPTV.ink"
+    }, 
+    {
+        "url": "http://www.iptvsaga.com/play/tv2/", 
+        "logos": "http://logo.tvip.ga, 
+        "image": "http://3.bp.blogspot.com/-AfWE8Bd0nOI/VkOl3mmHJHI/AAAAAAAAASk/rKMd7sXjkpY/s1600/tvv.jpg", 
+        "name": "International IPTV.Saga"
+    },
+    {
+        "url": "http://textuploader.com/5bmx3/raw", 
+        "logos": "http://www.manutv.net/wp-content/uploads/", 
+        "image": "http://i.infopls.com/images/moldova.gif", 
+        "name": "Moldova"
+    },
+    {
+        "url": "http://textuploader.com/5bmw2/raw", 
+        "logos": "", 
+        "image": "", 
+        "name": "Magazin mixt"
+    }
+]

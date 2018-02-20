@@ -1,0 +1,15 @@
+<addon id="plugin.program.lasubiect" name="La Subiect Wizard" version="1.0.1" provider-name="polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">La Subiect Wizard</summary>
+    <description lang="en">La Subiect Wizard - repo , addonuri, skins</description>
+    <platform>all</platform>
+	<news>Thanks To Aftermath For The Base Of The Wizard You Did A Great Job, I Have Made Some Great Changes And More To Come</news>
+  </extension>
+</addon>
