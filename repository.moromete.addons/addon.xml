@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.moromete.addons" name="Moromete's Unofficial Repository" version="1.0.0">
+	<extension point="xbmc.addon.repository" name="Moromete's Unofficial Repository">
+		<info compressed="false">http://streams.magazinmixt.ro/repository/addons.xml</info>
+		<checksum>http://streams.magazinmixt.ro/repository/addons.xml.md5</checksum>
+		<datadir zip="true">http://streams.magazinmixt.ro/repository/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Add-ons that arn't in the official XBMC repository.</summary>
+		<description>Add-ons for XBMC, sometimes are a work in progress.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

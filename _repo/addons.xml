@@ -69,6 +69,20 @@
   </extension>
 </addon>
 
+<addon id="repository.moromete.addons" name="Moromete's Unofficial Repository" version="1.0.0">
+	<extension point="xbmc.addon.repository" name="Moromete's Unofficial Repository">
+		<info compressed="false">http://streams.magazinmixt.ro/repository/addons.xml</info>
+		<checksum>http://streams.magazinmixt.ro/repository/addons.xml.md5</checksum>
+		<datadir zip="true">http://streams.magazinmixt.ro/repository/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Add-ons that arn't in the official XBMC repository.</summary>
+		<description>Add-ons for XBMC, sometimes are a work in progress.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
     <addon id="repository.polux" name="Polux Repo" version="1.0.1" provider-name="polux">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -84,6 +98,91 @@
             <description>Polux PlayGround</description>
             <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="repository.sarsaila" name="Sarsailă's Addons" version="1.0.7" provider-name="Sarsailă">
+    <extension point="xbmc.addon.repository" name="Sarsailă's Addons">
+                <dir>
+                    <info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
+                    <checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
+                    <datadir zip="true">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
+                </dir>
+                <dir>
+                    <info compressed="false">http://api.bitbucket.org/1.0/repositories/xngsrs/myhobby/raw/master/addons.xml</info>
+                    <checksum>http://api.bitbucket.org/1.0/repositories/xngsrs/myhobby/raw/master/addons.xml.md5</checksum>
+                    <datadir zip="true">http://api.bitbucket.org/1.0/repositories/xngsrs/myhobby/raw/master/zips/</datadir>
+                </dir>
+                <dir>
+                    <info compressed="false">https://raw.githubusercontent.com/xngsrs/myhobby/master/addons.xml</info>
+                    <checksum>https://raw.githubusercontent.com/xngsrs/myhobby/master/addons.xml.md5</checksum>
+                    <datadir zip="true">https://github.com/xngsrs/myhobby/raw/master/zips/</datadir>
+                </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install Addons from Sarsa repo</summary>
+        <description>Download and install addons for Kodi.</description>
+        <disclaimer>Sarsailă</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup"
+       name="BeautifulSoup"
+       version="3.2.1"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup4"
+       name="BeautifulSoup4"
+       version="4.5.3"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+             version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+    <website>http://www.crummy.com/software/BeautifulSoup/</website>
+  </extension>
+</addon>
+
+<addon id="script.module.mechanize"
+	name="Mechanize"
+	version="0.2.6"
+	provider-name="Tristan Fischer (sphere)">
+	<requires>
+	<import addon="xbmc.python"
+			version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module"
+			 library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Stateful programmatic web browsing in Python, after Andy Lester’s Perl module WWW::Mechanize.</summary>
+		<description lang="en">packed for xbmc from https://github.com/jjlee/mechanize</description>
+		<disclaimer lang="en">packed for xbmc from https://github.com/jjlee/mechanize</disclaimer>
+		<forum></forum>
+		<website>http://wwwsearch.sourceforge.net/mechanize/</website>
+		<license>BSD</license>
+		<platform>all</platform>
+		<source>https://github.com/jjlee/mechanize</source>
+	</extension>
 </addon>
 
 <addon id="script.module.pytz" name="pytz" version="2014.2" provider-name="Stuart Bishop, Paul Backhouse">
@@ -103,6 +202,32 @@
 	    <email></email>
 	    <disclaimer lang="en">Use at your own risk. The authors accept no liability. May cause permanent and/or catastrophic damage. Side effects include, but are not limited to loss of memory, seizures, sudden fits of rage, sudden fits of melancholy, inability to recall prominent capital cities, lack of respect for authority, fear of cats, temporary and/or permanent black outs. Avoid inhalation. Use in a well ventilated space. Keep away from small children.</disclaimer>
 	</extension>
+</addon>
+
+<addon id="script.module.requests"
+       name="requests"
+       version="2.18.4"
+       provider-name="kennethreitz">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.urllib3" version="1.22"/>
+    <import addon="script.module.chardet" version="3.0.4"/>
+    <import addon="script.module.idna" version="2.6"/>
+    <import addon="script.module.certifi" version="2017.07.27.1"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python HTTP for Humans</summary>
+    <description lang="en_GB">Packed for KODI from https://github.com/requests/requests</description>
+    <platform>all</platform>
+    <language></language>
+    <license>Apache2</license>
+    <forum></forum>
+    <website>http://python-requests.org</website>
+    <source>https://github.com/beenje/script.module.requests</source>
+    <email>beenje AT gmail.com</email>
+  </extension>
 </addon>
 
 <addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
