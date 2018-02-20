@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+
+	<string id="40000">Plexus-Streams</string>
+
+	<!-- Settings.xml -->
+	<string id="30000">Geral</string>
+	<string id="40114">-Website-parsers do addon</string>
+	<string id="600013">Seleccione a sua timezone</string>
+	<string id="40100">Esconder Porno</string>
+	<string id="1106">Activar traducao de categorias russas</string>
+	<string id="400000">Listas/Parsers</string>
+	<string id="400001">Listas</string>
+	<string id="40134">Activar a lista oficial do sopcast.org </string>
+	<string id="400002">Parsers</string>
+	<string id="400003">Executar script python</string>
+	<string id="400004">Sincronizar parsers agora</string>
+	<string id="400005">Activar auto-sincronizacao de parsers</string>
+	<string id="400006">Intervalo na pesquisa de alterações</string>
+	<string id="70009">Forçar utilização do DVD Player</string>
+	<string id="70036">-Histórico do addon</string>
+	<string id="70037">Activar histórico do addon</string>
+	<string id="70038">Items a guardar</string>
+	<string id="70039">Apagar histórico do addon</string>
+	<string id="70040">Entrar na lista de parsers automaticamente</string>
+
+	<!-- Default.py -->
+	<string id="40115">-Listas xml do addon</string>
+	<string id="40144">-Favoritos do addon</string>
+	<string id="40004">Ir para hash Acestream / Torrent URL</string>
+	<string id="600029">Carregar ficheiro .torrent local</string>
+	<string id="40005">Ir para ID Sopcast</string>
+	<string id="40006">Ir para URL Sopcast</string>
+	<string id="40056">Sistema Operativo incompatível!</string>
+
+	<!-- acestream.py -->
+	<string id="600028">Seleccione o ficheiro torrent local.</string>
+
+	<!-- advancedfunctions.py -->
+	<string id="600026">Definicao alterada com sucesso</string>
+
+	<!-- utils/keymapeditor.py -->
+	<string id="70034">Pressione o botão que deseja atribuir</string>
+	<string id="70035">Timeout em %.0f segundos...</string>
+
+	<!-- livestreams.py -->
+	<string id="40116">[B][COLOR orange]Lista sopcast.org[/COLOR][/B] (http://sopcast.org/chlist.xml)</string>
+	<string id="40121">[B]+ Adicionar outra lista[/B] </string>
+	<string id="40123">Seleccione um tipo de lista:</string>
+	<string id="40124">Remota</string>
+	<string id="40125">Local</string>
+	<string id="40186">Seleccione a sua lista xml:</string>
+	<string id="40130">Indique um nome para a lista.</string>
+	<string id="40129">Lista adicionada com sucesso</string>
+	<string id="40127">Introduza o url da lista</string>
+	<string id="40128">O url não é válido</string>
+	<string id="40150">Lista removida com sucesso!</string>
+
+	<!-- favourites.py -->
+	<string id="40148">Adicionado com sucesso aos favoritos</string>
+	<string id="40147">Removido com sucesso dos favoritos</string>
+	<string id="70022">Adicionar um favorito manualmente</string>
+	<string id="70023">Introduza um url sop ou ace</string>
+	<string id="70024">Insira um nome para o canal</string>
+
+	<!-- directoryhandle.py -->
+	<string id="40143">Adicionar aos favoritos do addon</string>
+	<string id="40146">Remover dos favoritos do addon</string>
+	<string id="40149">Remover lista</string>
+	<string id="400009">Remover parser</string>
+	<string id="400010">Sincronizar parser</string>
+
+	<!-- utilities.py -->
+	<string id="40188">Faltam: </string>
+	<string id="40189"> segundos</string>
+
+	<!-- webutils.py -->
+	<string id="40044">A extrair conteudo dos módulos. Aguarde</string>
+	<string id="40045">A remover ficheiros.</string>
+	<string id="40122">Não foi possível obter o xml.</string>
+
+	<!-- resolver.py -->
+	<string id="40033">Introduza um ID</string>
+	<string id="40034">Introduza um URL</string>
+	<string id="40035">ID Directo</string>
+	<string id="40036">URL Directo</string>
+
+	<!-- parser.py -->
+	<string id="400011">[B]Adicionar um Website-Parser plugin [/B]</string>
+	<string id="400012">Localização do plugin?</string>
+	<string id="400013">Escolha a tarball (.tar.gz)</string>
+	<string id="400014">Parser instalado com sucesso</string>
+	<string id="400015">Ocorreu um erro a adicionar o parser</string>
+	<string id="400016">Introduza o url do plugin</string>
+	<string id="400017">Endereco não é válido. Necessária extensão tar.gz</string>
+	<string id="400018">A transferir parser</string>
+	<string id="400019">Parser removido com sucesso</string>
+	<string id="400020">A sincronizar parsers</string>
+	<string id="400021">Verificando...</string>
+	<string id="400022">Actualizado!</string>
+	<string id="400023">Ja estava actualizado.</string>
+	<string id="400024">Erro: url invalido para o repositório do parser</string>
+	<string id="400025">Actualizando...</string>
+	<string id="400026">Parser actualizado com sucesso!</string>
+	<string id="400027">A transferir script...</string>
+	<string id="400028">Script executado com sucesso</string>
+	<string id="70004">Qualquer plugin aqui encontrado é desenvolvido por terceiros.</string>
+	<string id="70005">Não são parte do addon nem mantidos pelos desenvolvedores.</string>
+	<string id="70006">Não peça nem espere qualquer tipo de suporte.</string>
+	<string id="70007">Removida toda a informacao de parsers</string>
+	<string id="70008">Remover vestígios de parsers</string>
+
+	<!-- Misc -->
+	<string id="40022">Acestream ou Sopcast não encontrado.</string>
+	<string id="40023">Lista de Streams</string>
+	<string id="40024">Não encontrado.</string>
+	<string id="40077">Ingleses</string>
+	<string id="40078">Desporto</string>
+	<string id="40079">Notícias</string>
+	<string id="40080">Casamento</string>
+	<string id="40081">Genéricos</string>
+	<string id="40082">Educacional</string>
+	<string id="40083">CIS</string>
+	<string id="40084">Masculino</string>
+	<string id="40085">Compras</string>
+	<string id="40086">Reserva</string>
+	<string id="40087">Donetsk</string>
+	<string id="40088">Regional</string>
+	<string id="40089">Porno</string>
+	<string id="40090">TV Sec.21</string>
+	<string id="40091">Canais Ucranianos</string>
+	<string id="40092">Infantil</string>
+	<string id="40093">Filmes</string>
+	<string id="40094">Nocturnos</string>
+	<string id="40095">Europa</string>
+	<string id="40096">Ukr</string>
+	<string id="40097">Música</string>
+	<string id="40098">Religioso</string>
+	<string id="40099">Diversão</string>
+	<string id="40151">Ucrânia</string>
+	<string id="60001">Fevereiro</string>
+	<string id="60002">Março</string>
+	<string id="600012">Dia:</string>
+
+</strings>

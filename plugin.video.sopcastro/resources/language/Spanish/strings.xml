@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+
+	<string id="40000">Plexus-Streams</string>
+
+	<!-- Settings.xml -->
+	<string id="30000">General</string>
+	<string id="39001">Primer inicio</string>
+	<string id="39002">Recuerde abrir Plexus antes de utilizar Plexus-Streams para que descargue los módulos necesarios</string>
+	<string id="40114">-Parseadores de webs</string>
+	<string id="600013">Seleccionar zona horaria</string>
+	<string id="40100">Ocultar pornografía</string>
+	<string id="1106">Activar traducción de texto ruso</string>
+	<string id="400000">Listas/Parseadores</string>
+	<string id="400001">Listas</string>
+	<string id="40134">Activar lista oficial de sopcast.org</string>
+	<string id="400002">Parseadores</string>
+	<string id="400003">Ejecutar script python</string>
+	<string id="400004">Sincronizar parseadores ahora</string>
+	<string id="400005">Activar auto-sincronización de parseadores</string>
+	<string id="400006">Intervalo de sincronización de los parseadores</string>
+	<string id="70009">Forzar el uso de DVD Player para la reproducción de AceStream y Sopcast</string>
+	<string id="70036">-Historial</string>
+	<string id="70037">Activar historial del addon</string>
+	<string id="70038">Cantidad de elementos a guardar</string>
+	<string id="70039">Borrar historial del addon</string>
+	<string id="70040">Entrar a la lista de parseadores al iniciar</string>
+
+	<!-- Default.py -->
+	<string id="40115">-Listas XML</string>
+	<string id="40144">-Favoritos</string>
+	<string id="40004">Reproducir hash Acestream / Torrent URL</string>
+	<string id="600029">Cargar archivo .torrent</string>
+	<string id="40005">Reproducir ID SopCast</string>
+	<string id="40006">Reproducir URL SopCast</string>
+	<string id="40056">No disponible en tu SO!</string>
+
+	<!-- acestream.py -->
+	<string id="600028">Selecciona el archivo torrent.</string>
+
+	<!-- advancedfunctions.py -->
+	<string id="600026">Opción cambiada correctamente</string>
+
+	<!-- utils/keymapeditor.py -->
+	<string id="70034">Presina la tecla que deseas asignar</string>
+	<string id="70035">Timeout en %.0f segundo...</string>
+
+	<!-- livestreams.py -->
+	<string id="40116">[B][COLOR orange]Lista Sopcast.org[/COLOR][/B] (http://sopcast.org/chlist.xml)</string>
+	<string id="40121">[B]+ Añadir lista[/B] </string>
+	<string id="40123">Selecciona el tipo de lista:</string>
+	<string id="40124">Remota</string>
+	<string id="40125">Local</string>
+	<string id="40186">Selecciona tu lista XML:</string>
+	<string id="40130">Nombre para la lista</string>
+	<string id="40129">Lista añadida correctamente</string>
+	<string id="40127">Introduce la URL de la lista</string>
+	<string id="40128">No es una URL correcta</string>
+	<string id="40150">Lista borrada correctamente</string>
+
+	<!-- favourites.py -->
+	<string id="40148">Añadido a favoritos</string>
+	<string id="40147">Borrado de favoritos</string>
+	<string id="70022">Añadir favorito</string>
+	<string id="70023">Introduce una URL AceStream o Sopcast</string>
+	<string id="70024">Introduce el nombre para el canal</string>
+
+	<!-- directoryhandle.py -->
+	<string id="40143">Añadir a favoritos del addon</string>
+	<string id="40146">Eliminar de favoritos del addon</string>
+	<string id="40149">Borrar lista</string>
+	<string id="400009">Borrar parseador</string>
+	<string id="400010">Sincronizar código del parseador</string>
+
+	<!-- utilities.py -->
+	<string id="40188">Falta: </string>
+	<string id="40189"> segundos</string>
+
+	<!-- webutils.py -->
+	<string id="40044">Extrayendo contenido del módulo. Por favor, espera.</string>
+	<string id="40045">Borrando archivo.</string>
+	<string id="40122">No se ha podido obtener el xml.</string>
+
+	<!-- resolver.py -->
+	<string id="40033">Introduce un ID</string>
+	<string id="40034">Introduce una URL</string>
+	<string id="40035">ID directo</string>
+	<string id="40036">URL directa</string>
+
+	<!-- parser.py -->
+	<string id="400011">[B]Añadir un parseador web [/B]</string>
+	<string id="400012">¿Localización del plugin?</string>
+	<string id="400013">Seleccione el tarball (.tar.gz)</string>
+	<string id="400014">Parseador correctamente installado</string>
+	<string id="400015">Se ha producido un error instalando el parseador</string>
+	<string id="400016">Introduce la URL del plugin</string>
+	<string id="400017">Inválido. El archivo debe de tener extensión tar.gz</string>
+	<string id="400018">Descargando parseador</string>
+	<string id="400019">Parseador borrado correctamente</string>
+	<string id="400020">Sincronizando parseadores</string>
+	<string id="400021">Comprobando...</string>
+	<string id="400022">Actualizado!</string>
+	<string id="400023">Actualmente en la última versión.</string>
+	<string id="400024">Error: no es una URL válida para el repositorio de parseadores</string>
+	<string id="400025">Actualizando...</string>
+	<string id="400026">Parseador actualizado correctamente!</string>
+	<string id="400027">Descargando script...</string>
+	<string id="400028">Script ejecutado correctamente</string>
+	<string id="70004">Cualquier plugin que pueda encontrar aquí es un desarrollo de terceros.</string>
+	<string id="70005">No son desarrollados como parte del addon.</string>
+	<string id="70006">No pida soporte de ellos.</string>
+	<string id="70007">Todos los parseadores borrados</string>
+	<string id="70008">¿Borrar todos los parseadores?</string>
+
+	<!-- Misc -->
+	<string id="40021">Selecciona un canal</string>
+	<string id="40022">Enlaces Acestream or Sopcast links no encontrados.</string>
+	<string id="40023">Stream list</string>
+	<string id="40024">No encontrado.</string>
+	<string id="40077">Inglés</string>
+	<string id="40078">Deportes</string>
+	<string id="40079">Noticias</string>
+	<string id="40080">Boda</string>
+	<string id="40081">Generalista</string>
+	<string id="40082">Educativo</string>
+	<string id="40083">CIS</string>
+	<string id="40084">Canales masculinos</string>
+	<string id="40085">Compras</string>
+	<string id="40086">Reservado</string>
+	<string id="40087">Donetsk</string>
+	<string id="40088">Regional</string>
+	<string id="40089">Pornográfico</string>
+	<string id="40090">Sec.21 TV</string>
+	<string id="40091">Canales ucranianos</string>
+	<string id="40092">Infantil</string>
+	<string id="40093">Películas</string>
+	<string id="40094">Nocturno</string>
+	<string id="40095">Europe</string>
+	<string id="40096">Ukr</string>
+	<string id="40097">Música</string>
+	<string id="40098">Religión</string>
+	<string id="40099">Entretenimiento</string>
+	<string id="40151">Ucrania</string>
+	<string id="60001">Febrero</string>
+	<string id="60002">Marzo</string>
+	<string id="600012">Day:</string>
+
+</strings>

@@ -1,0 +1,13 @@
+<settings>
+    <category label="General">
+        <setting id="playmode" type="enum" label="30002" lvalues="30003|30004" default="0" />
+        <setting type="sep" />
+        <setting type="lsep" label="30016" />
+        <setting id="filterset" type="enum" label="30010" lvalues="30011|30012|30013|30014|30015" default="0" />
+        <setting label="30005" type="text" id="txtfilter1" />
+        <setting label="30006" type="text" id="txtfilter2" />
+        <setting label="30007" type="text" id="txtfilter3" />
+        <setting label="30008" type="text" id="txtfilter4" />
+        <setting label="30009" type="text" id="txtfilter5" />
+    </category>
+</settings>

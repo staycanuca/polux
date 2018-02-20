@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+
+	<string id="40000">Plexus-Streams</string>
+
+	<!-- Settings.xml -->
+	<string id="30000">Algemeen</string>
+	<string id="40114">-Addon Website-parsers</string>
+	<string id="600013">Selecteer je tijdzone</string>
+	<string id="40100">Verberg porno</string>
+	<string id="1106">Zet vertaling van Russisch aan</string>
+	<string id="400000">Lijsten/Parsers</string>
+	<string id="400001">Lijsten</string>
+	<string id="40134">Zet sopcast.org officiële lijst aan</string>
+	<string id="400002">Parsers</string>
+	<string id="400003">Voer een python script uit</string>
+	<string id="400004">Synchroniseer parsers nu</string>
+	<string id="400005">Zet parser auto-synchronisatie aan</string>
+	<string id="400006">Synchroniseer interval voor parsers</string>
+	<string id="70009">Force use DVD Player for ace and sop playback</string>
+	<string id="70036">-Addon History</string>
+	<string id="70037">Enable addon history</string>
+	<string id="70038">Items to save</string>
+	<string id="70039">Clean addon history</string>
+	<string id="70040">Enter to parser list on boot</string>
+
+	<!-- Default.py -->
+	<string id="40115">-Addon xml lijst</string>
+	<string id="40144">-Addon Favorieten</string>
+	<string id="40004">Speel Acestream hash / Torrent URL</string>
+	<string id="600029">Laad lokaal .torrent bestand</string>
+	<string id="40005">Speel SopCast ID</string>
+	<string id="40006">Speel SopCast URL</string>
+	<string id="40056">Niet beschikbaar voor jouw besturingssysteem!</string>
+
+	<!-- acestream.py -->
+	<string id="600028">Kies je lokale torrent bestand.</string>
+
+	<!-- advancedfunctions.py -->
+	<string id="600026">Instelling is gewijzigd</string>
+
+	<!-- utils/keymapeditor.py -->
+	<string id="70034">Press the key you want to assign now</string>
+	<string id="70035">Timeout in %.0f seconds...</string>
+
+	<!-- livestreams.py -->
+	<string id="40116">[B][COLOR orange]Sopcast.org lijst[/COLOR][/B] (http://sopcast.org/chlist.xml)</string>
+	<string id="40121">[B]+ Andere lijst toevoegen[/B] </string>
+	<string id="40123">Selecteer een lijst type:</string>
+	<string id="40124">Remote</string>
+	<string id="40125">Lokaal</string>
+	<string id="40186">Selecteer jouw xml lijst:</string>
+	<string id="40130">Geef jouw lijst een naam.</string>
+	<string id="40129">Lijst succesvol toegevoegd</string>
+	<string id="40127">Voer de lijst url in</string>
+	<string id="40128">Geen geldige url</string>
+	<string id="40150">Lijst succesvol verwijderd!</string>
+
+	<!-- favourites.py -->
+	<string id="40148">Sucessvol toegevoegd aan favorieten</string>
+	<string id="40147">Sucessvol verwijderd uit favorieten</string>
+	<string id="70022">Manually add a favourite</string>
+	<string id="70023">Insert ace or sop url</string>
+	<string id="70024">Insert a name for your channel</string>
+
+	<!-- directoryhandle.py -->
+	<string id="40143">Toevoegen aan addon favorieten</string>
+	<string id="40146">Verwijder uit addon favorieten</string>
+	<string id="40149">Verwijder lijst</string>
+	<string id="400009">Verwijder parser</string>
+	<string id="400010">Synchroniseer parser code</string>
+
+	<!-- utilities.py -->
+	<string id="40188">Over: </string>
+	<string id="40189"> seconden</string>
+
+	<!-- webutils.py -->
+	<string id="40044">Inhoud module uitpakken. Moment aub.</string>
+	<string id="40045">Verwijderen bestanden.</string>
+	<string id="40122">Niet in staat url te verkrijgen.</string>
+
+	<!-- resolver.py -->
+	<string id="40033">Voer een ID in</string>
+	<string id="40034">Voer een URL in</string>
+	<string id="40035">Directe ID</string>
+	<string id="40036">D URL</string>
+
+	<!-- parser.py -->
+	<string id="400011">[B]Voeg een website-parser plugin toe[/B]</string>
+	<string id="400012">Plugin locatie?</string>
+	<string id="400013">Selecteer de tarball (.tar.gz)</string>
+	<string id="400014">Parser successvol geïnstalleerd</string>
+	<string id="400015">Er is een fout opgetreden tijdens installeren van de parser</string>
+	<string id="400016">Voer de plugin url in</string>
+	<string id="400017">Niet geldig. tar.gz suffix is vereist.</string>
+	<string id="400018">Downloaden parser</string>
+	<string id="400019">Parser succesvol verwijderd</string>
+	<string id="400020">Synchroniseren parsers</string>
+	<string id="400021">Controleren...</string>
+	<string id="400022">Geüpdate!</string>
+	<string id="400023">Is al laatste versie.</string>
+	<string id="400024">Fout: geen geldige url voor parser repo</string>
+	<string id="400025">Updaten...</string>
+	<string id="400026">Parser succesvol geüpdate!</string>
+	<string id="400027">Downloaden script...</string>
+	<string id="400028">Script succesvol uitgevoerd</string>
+	<string id="70004">Any plugins you may find here are 3rd party.</string>
+	<string id="70005">They are not developed nor part of the core addon.</string>
+	<string id="70006">Do not ask for support regarding any of them.</string>
+	<string id="70007">All parser traces deleted</string>
+	<string id="70008">Remove all parser traces</string>
+
+	<!-- Misc -->
+	<string id="40022">Acestream of Sopcast links niet gevonden.</string>
+	<string id="40023">Stream lijst</string>
+	<string id="40024">Niet gevonden.</string>
+	<string id="40077">Engels</string>
+	<string id="40078">Sport</string>
+	<string id="40079">Nieuws</string>
+	<string id="40080">Trouwen</string>
+	<string id="40081">Algemeen</string>
+	<string id="40082">Onderwijs</string>
+	<string id="40083">CIS</string>
+	<string id="40084">Mannen Kanalen</string>
+	<string id="40085">Winkelen</string>
+	<string id="40086">Gereserveerd</string>
+	<string id="40087">Donetsk</string>
+	<string id="40088">Regionaal</string>
+	<string id="40089">Porno</string>
+	<string id="40090">Sec.21 TV</string>
+	<string id="40091">Oekraïense kanalen</string>
+	<string id="40092">Kinderen</string>
+	<string id="40093">Films</string>
+	<string id="40094">Nacht gerelateerd</string>
+	<string id="40095">Europa</string>
+	<string id="40096">Ukr</string>
+	<string id="40097">Muziek</string>
+	<string id="40098">Religie</string>
+	<string id="40099">Feesten</string>
+	<string id="40151">Oekraïne</string>
+	<string id="60001">Februari</string>
+	<string id="60002">Maart</string>
+	<string id="600012">Dag:</string>
+
+</strings>
