@@ -95,7 +95,7 @@
 
 <addon id="plugin.video.iptvts"
        name="IPTV TS"
-       version="1.0.3"
+       version="1.0.4"
        provider-name="polux">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
