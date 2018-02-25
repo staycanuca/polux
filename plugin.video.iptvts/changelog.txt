@@ -1,3 +1,5 @@
+[B]1.0.3[/B
+Regex fix
 [B]1.0.2[/B
 Multi blog setup
 [B]1.0.0[/B]

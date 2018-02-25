@@ -21,7 +21,7 @@
 __scriptname__ = "IPTV TS"
 __author__ = "polux"
 __scriptid__ = "plugin.video.iptvts"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 import urllib, urllib2, re, gzip, socket
 import xbmc,xbmcplugin,xbmcgui,xbmcaddon,sys, os
@@ -310,7 +310,7 @@ def FREEPAGE(url):
 	
 def FILMOVERPAGE(url):
     html = getHtml(url)
-    blogpage = re.compile('<div class="at-above-post addthis_tool".+?</strong></p>\s+<p>(.+?)</p>', re.DOTALL | re.IGNORECASE).findall(html)[0]
+    blogpage = re.compile('<div class="at-above-post-homepage addthis_tool".+?<p>(.+?)</p>', re.DOTALL | re.IGNORECASE).findall(html)[0]
     if '#EXTINF' in blogpage:
         blogpage = blogpage.replace('<br />', '').replace('&#8211;', ' - ')
         parsem3u(blogpage)
