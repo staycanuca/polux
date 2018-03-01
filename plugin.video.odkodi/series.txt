@@ -24,3 +24,4 @@ url="http://alphamediazone.com/data/TV%20Series/English/">name="series alphamedi
 url="http://dls2.tabesh.biz/series/">name="series tabesh"
 url="http://dandb.serveblog.net/MyWeb/video/TV%20Shows/">name="series dandb"
 url="http://dl2.lavinmovie.ir/series/">name="series lavinmovie"
+url="http://www.alphamediazone.com/data/TV%20Series/">name="series alphamediazone"
