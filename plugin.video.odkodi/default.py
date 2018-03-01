@@ -95,7 +95,7 @@ def Ro():
         Menu('[COLORred]Press here to add a source url[/COLOR]','',14,'',ICON,FANART,'','')
 		
 def Online():
-    url = 'https://raw.githubusercontent.com/ekkash/WebCrunch/master/api/open-directories.txt'
+    url = 'https://raw.githubusercontent.com/HerbL27/FileMasta/master/API/open-directories.txt'
     HTML = Open_Url(url)
     match = re.compile('(http.+?)\n').findall(HTML)
     for url in match:
