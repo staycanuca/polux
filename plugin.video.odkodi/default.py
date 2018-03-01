@@ -30,7 +30,7 @@ source_ro = ADDON_PATH + 'ro.txt'
 ICON = ADDON_PATH + 'icon.png'
 FANART = ADDON_PATH + 'fanart.jpg'
 PATH = 'Open Directories'
-VERSION = '0.0.1'
+VERSION = '0.0.3'
 Dialog = xbmcgui.Dialog()
 addon_id = 'plugin.video.odkodi'
 ADDON = xbmcaddon.Addon(id=addon_id)
