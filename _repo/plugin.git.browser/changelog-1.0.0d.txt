@@ -1,3 +1,6 @@
+v1.0.0d
+
+- User list fix
 v1.0.0c
 
 - User list
