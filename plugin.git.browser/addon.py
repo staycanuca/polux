@@ -25,7 +25,8 @@ def main():
 	kodi.add_menu_item({'mode': 'search_menu', 'type': "repository", 'title': "Search by GitHub Repository Title"}, {'title': "Search by GitHub Repository Title"}, icon='repository.png')
 	kodi.add_menu_item({'mode': 'search_menu', 'type': "addonid",'title': "Search by Addon ID"}, {'title': "Search by Addon ID"}, icon='addonid.png')
 	kodi.add_menu_item({'mode': 'update_addons'}, {'title': "Check for Updates"}, icon='update.png', visible=kodi.get_setting('enable_updates') == 'true')
-	kodi.add_menu_item({'mode': 'addonuri'}, {'title': "Addons"}, icon='about.png')
+	kodi.add_menu_item({'mode': 'addonuri'}, {'title': "GitHub Addons List"}, icon='about.png')
+	kodi.add_menu_item({'mode': 'users'}, {'title': "GitHub Username List"}, icon='about.png')
 	kodi.add_menu_item({'mode': 'about'}, {'title': "About GitHub Installer"}, icon='about.png')
 	kodi.add_menu_item({'mode': 'addon_settings'}, {'title': "Tools and Settings"}, icon='settings.png')
 	kodi.eod()
@@ -60,6 +61,49 @@ def addonuri():
 	kodi.add_menu_item({'mode': 'search', 'type': 'username', 'query': 'xngsrs'}, {'title': '[COLOR darkorange]Sarsaila Repo[/COLOR] (RO)'},  icon='null')
 	kodi.add_menu_item({'mode': 'search', 'type': 'addonid', 'query': 'plugin.video.streams'}, {'title': '[COLOR darkorange]Streams[/COLOR] - by moromete (RO)'},  icon='null')
 	kodi.add_menu_item({'mode': 'search', 'type': 'addonid', 'query': 'plugin.video.digi-online'}, {'title': '[COLOR darkorange]Digi Online[/COLOR] - by dexterke (RO)'},  icon='null')
+	kodi.eod()
+	
+@kodi.register('users')
+def addonuri():
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'iwannabelikemike'}, {'title': 'iwannabelikemike'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'teverz'}, {'title': 'teverz''},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'biglad'}, {'title': 'biglad'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'mullafabz'}, {'title': 'mullafabz'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'alkiber'}, {'title': 'alkiber''},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'spinztv'}, {'title': 'spinztv'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'mhancoc7'}, {'title': 'mhancoc7'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'kodibae'}, {'title': 'kodibae'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'tvaddonsco'}, {'title': 'tvaddonsco'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'redhood36'}, {'title': 'redhood36'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'nemesis668'}, {'title': 'nemesis668'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'jsergio123'}, {'title': 'jsergio123'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'Andorth'}, {'title': 'Andorth'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'Dev-kong'}, {'title': 'Dev-kong'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'midraal'}, {'title': 'midraal'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'TheKnifeRepo'}, {'title': 'TheKnifeRepo'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'rvermaat'}, {'title': 'rvermaat'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'blackstar3000'}, {'title': 'blackstar3000'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'crazyxbmc'}, {'title': 'crazyxbmc'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'nixgates'}, {'title': 'nixgates'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'goliath-evolve'}, {'title': 'goliath-evolve'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'MrBlamo420'}, {'title': 'MrBlamo420'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'kayaaron13'}, {'title': 'kayaaron13'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'Shepo6'}, {'title': 'Shepo6'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'LReylist'}, {'title': 'LReylist'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'tkey3'}, {'title': 'tkey3''},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'tony5856'}, {'title': 'tony5856'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'familyrep'}, {'title': 'familyrep'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'ttmediav1'}, {'title': 'ttmediav1'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'BludhavenGrayson'}, {'title': 'BludhavenGrayson'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'intrcomp'}, {'title': 'intrcomp'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'TheBeautifulMonkey'}, {'title': 'TheBeautifulMonkey'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'teamrepomonster'}, {'title': 'teamrepomonster'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'kodil'}, {'title': 'kodil'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'GandelfsRepo'}, {'title': 'GandelfsRepo'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'fluxustv'}, {'title': 'fluxustv'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'illuminatitemple'}, {'title': 'illuminatitemple'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'elgatito'}, {'title': 'elgatito'},  icon='null'
+	kodi.add_menu_item{'mode': 'search', 'type': 'username', 'query': 'koying'}, {'title': 'koying'},  icon='null'
 	kodi.eod()
 	
 @kodi.register('search')

@@ -1,3 +1,6 @@
+v1.0.0c
+
+- User list
 v1.0.0
 
 - Standalone Release
