@@ -1,0 +1,16 @@
+27/05/2017 - Version 1.1.1
+->Removed xbmc.PLAYER_CORE_AUTO due to Kodi 17 version changes. (SopCast playback problems)
+
+08/04/2017 - Version 1.1.0
+->Added support for SopCast XML lists.
+->Added support for https protocol.
+->Added diacritics and fixed some grammar mistakes in Romanian language.
+->Fixed error while loading local m3u playlist.
+
+01/04/2017 - Version 1.0.0
+->Added support for the following protocols: "acestream://", "sop://", "http://", "mmsh://", "rtmp://" and "rtsp://".
+->Added support for playing torrent files.
+->Added support for TVList and M3U lists.
+->Added history for played channels.
+->Added support for saving channels metadata on disk.
+->Added multicolor icons support.

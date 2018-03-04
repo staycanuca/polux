@@ -1,0 +1,781 @@
+# Kodi Media Center language file
+# Addon Name: p2ptv
+# Addon id: plugin.video.p2ptv
+# Addon Provider: Mario Bălănică
+msgid ""
+msgstr ""
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "p2ptv"
+msgstr ""
+
+msgctxt "#30001"
+msgid "My channels"
+msgstr ""
+
+msgctxt "#30002"
+msgid "History"
+msgstr ""
+
+msgctxt "#30003"
+msgid "AceStream: "
+msgstr ""
+
+msgctxt "#30004"
+msgid "SopCast: "
+msgstr ""
+
+msgctxt "#30005"
+msgid "Play an Acestream URI / Torrent URI"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Play a local .torrent file"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Play a SopCast ID"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Play a SopCast URI"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Add a channel"
+msgstr ""
+
+msgctxt "#30010"
+msgid "URL Address of the channel"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Invalid URL Address!"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Do you want to set a custom image for the channel?"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Choose the image"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Channel name"
+msgstr ""
+
+msgctxt "#30015"
+msgid "The channel has been added successfully!"
+msgstr ""
+
+msgctxt "#30016"
+msgid "The channel has been deleted!"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Setting changed successfully!"
+msgstr ""
+
+msgctxt "#30018"
+msgid "ID"
+msgstr ""
+
+msgctxt "#30019"
+msgid "URI"
+msgstr ""
+
+msgctxt "#30020"
+msgid "User ID"
+msgstr ""
+
+msgctxt "#30021"
+msgid "User URI"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Acestream URI"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Extracting module contents. Please wait."
+msgstr ""
+
+msgctxt "#30024"
+msgid "Removing files."
+msgstr ""
+
+msgctxt "#30025"
+msgid "Remove from my channels"
+msgstr ""
+
+msgctxt "#30026"
+msgid "Add to my channels list"
+msgstr ""
+
+msgctxt "#30027"
+msgid "OS:Windows -> SopCast configuration is incomplete!"
+msgstr ""
+
+msgctxt "#30028"
+msgid "Enable 'Configuration on next run' in the addon settings"
+msgstr ""
+
+msgctxt "#30029"
+msgid "and restart Kodi (as administrator)."
+msgstr ""
+
+msgctxt "#30030"
+msgid "Checking SopCast service. Please wait..."
+msgstr ""
+
+msgctxt "#30031"
+msgid "Service created. Attempting to play..."
+msgstr ""
+
+msgctxt "#30032"
+msgid "Channel initialization failed"
+msgstr ""
+
+msgctxt "#30033"
+msgid "Another instance of SopCast is still running on the background"
+msgstr ""
+
+msgctxt "#30034"
+msgid "Do you want to play it?"
+msgstr ""
+
+msgctxt "#30035"
+msgid "Loading the channel. Please wait %s seconds."
+msgstr ""
+
+msgctxt "#30036"
+msgid "Waiting till timeout..."
+msgstr ""
+
+msgctxt "#30037"
+msgid "Choose the .torrent file."
+msgstr ""
+
+msgctxt "#30038"
+msgid "Starting Acestream.. (through proxy)"
+msgstr ""
+
+msgctxt "#30039"
+msgid "If the playback fails, try to increase the player"
+msgstr ""
+
+msgctxt "#30040"
+msgid "timeout!"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Acestream module is not installed."
+msgstr ""
+
+msgctxt "#30042"
+msgid "Torrent not available or invalid."
+msgstr ""
+
+msgctxt "#30043"
+msgid "Starting..."
+msgstr ""
+
+msgctxt "#30044"
+msgid "Awaiting response"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Connecting"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Starting Acestream engine."
+msgstr ""
+
+msgctxt "#30047"
+msgid "Initial wait: "
+msgstr ""
+
+msgctxt "#30048"
+msgid "seconds"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Playing"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Link received"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Saving file"
+msgstr ""
+
+msgctxt "#30052"
+msgid "Downloading"
+msgstr ""
+
+msgctxt "#30053"
+msgid "Loading..."
+msgstr ""
+
+msgctxt "#30054"
+msgid "Loading Acestream"
+msgstr ""
+
+msgctxt "#30055"
+msgid "AceStream engine is waiting"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Playing torrent file."
+msgstr ""
+
+msgctxt "#30057"
+msgid "No response"
+msgstr ""
+
+msgctxt "#30058"
+msgid "Verifying data"
+msgstr ""
+
+msgctxt "#30059"
+msgid "Pre-buffering"
+msgstr ""
+
+msgctxt "#30060"
+msgid "Downloading"
+msgstr ""
+
+msgctxt "#30061"
+msgid "Buffering"
+msgstr ""
+
+msgctxt "#30062"
+msgid "Acestream Engine"
+msgstr ""
+
+msgctxt "#30063"
+msgid "Stats"
+msgstr ""
+
+msgctxt "#30064"
+msgid "Action:"
+msgstr ""
+
+msgctxt "#30065"
+msgid "Download:"
+msgstr ""
+
+msgctxt "#30066"
+msgid "Upload:"
+msgstr ""
+
+msgctxt "#30067"
+msgid "Seeds:"
+msgstr ""
+
+msgctxt "#30068"
+msgid "Downloaded:"
+msgstr ""
+
+msgctxt "#30069"
+msgid "Uploaded:"
+msgstr ""
+
+msgctxt "#30070"
+msgid "Left:"
+msgstr ""
+
+msgctxt "#30071"
+msgid "seconds"
+msgstr ""
+
+msgctxt "#30072"
+msgid "Unable to detect your operating system"
+msgstr ""
+
+msgctxt "#30073"
+msgid "Select it from the list"
+msgstr ""
+
+msgctxt "#30074"
+msgid "Are you using OpenELEC x86_x64?"
+msgstr ""
+
+msgctxt "#30075"
+msgid "Are you using OpenELEC i386?"
+msgstr ""
+
+msgctxt "#30076"
+msgid "Downloading SopCast modules..."
+msgstr ""
+
+msgctxt "#30077"
+msgid "OS:Windows -> Kodi has to be running as administrator."
+msgstr ""
+
+msgctxt "#30078"
+msgid "to configure SopCast."
+msgstr ""
+
+msgctxt "#30079"
+msgid "Checking if SopCast is installed..."
+msgstr ""
+
+msgctxt "#30080"
+msgid "Finished."
+msgstr ""
+
+msgctxt "#30081"
+msgid "Sopcast is not installed."
+msgstr ""
+
+msgctxt "#30082"
+msgid "Download version 4.0 from SopCast.org"
+msgstr ""
+
+msgctxt "#30083"
+msgid "OS:Windows -> Getting user's ID..."
+msgstr ""
+
+msgctxt "#30084"
+msgid "Unable to get users list"
+msgstr ""
+
+msgctxt "#30085"
+msgid "OS:Windows -> Getting user's ID..."
+msgstr ""
+
+msgctxt "#30086"
+msgid "Starting 'SRVany' download..."
+msgstr ""
+
+msgctxt "#30087"
+msgid "Downloading 'SRVany'..."
+msgstr ""
+
+msgctxt "#30088"
+msgid "Creating 'sopcastp2p' service..."
+msgstr ""
+
+msgctxt "#30089"
+msgid "Unable to create the service!"
+msgstr ""
+
+msgctxt "#30090"
+msgid "Modifying registries..."
+msgstr ""
+
+msgctxt "#30091"
+msgid "Error: Unable to modify the registries."
+msgstr ""
+
+msgctxt "#30092"
+msgid "Trying to get service permissions..."
+msgstr ""
+
+msgctxt "#30093"
+msgid "Error: Unable to change the permissions."
+msgstr ""
+
+msgctxt "#30094"
+msgid "Trying to set service permissions..."
+msgstr ""
+
+msgctxt "#30095"
+msgid "Error: Unable to change the service permissions.
+msgstr ""
+
+msgctxt "#30096"
+msgid "Starting 'regini' download..."
+msgstr ""
+
+msgctxt "#30097"
+msgid "Downloading 'regini'..."
+msgstr ""
+
+msgctxt "#30098"
+msgid "Running 'regini'..."
+msgstr ""
+
+msgctxt "#30099"
+msgid "SopCast has been configured successfully!"
+msgstr ""
+
+msgctxt "#30100"
+msgid "Not available for the architecture of your Mac."
+msgstr ""
+
+msgctxt "#30101"
+msgid "By default, SopCast will use the Kodi player."
+msgstr ""
+
+msgctxt "#30103"
+msgid "Do you want to use an external application/player?"
+msgstr ""
+
+msgctxt "#30104"
+msgid "Click 'ok' to download SopCast.apk"
+msgstr ""
+
+msgctxt "#30105"
+msgid "Select a folder to save the .apk files"
+msgstr ""
+
+msgctxt "#30106"
+msgid "Downloading 'SopCast.apk'"
+msgstr ""
+
+msgctxt "#30107"
+msgid "SopCast.apk has been downloaded to:"
+msgstr ""
+
+msgctxt "#30108"
+msgid "Please install it!"
+msgstr ""
+
+msgctxt "#30109"
+msgid "The AppID was not detected"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Downloading AceStream modules..."
+msgstr ""
+
+msgctxt "#30111"
+msgid "Downloading AceStream bundle for Android..."
+msgstr ""
+
+msgctxt "#30112"
+msgid "By default, p2ptv will use its integrated AceStream engine"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Do you want to download and use the app instead?"
+msgstr ""
+
+msgctxt "#30114"
+msgid "It is necessary to have the 'acestreamengine.apk' file"
+msgstr ""
+
+msgctxt "#30115"
+msgid "installed to play Acestreams."
+msgstr ""
+
+msgctxt "#30116"
+msgid "It will be downloaded now!"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Downloading 'AcestreamEngine.apk'"
+msgstr ""
+
+msgctxt "#30118"
+msgid "'AcestreamEngine.apk' has been downloaded in:"
+msgstr ""
+
+msgctxt "#30119"
+msgid "Don't forget that AcestreamEngine app"
+msgstr ""
+
+msgctxt "#30120"
+msgid "should be running before starting"
+msgstr ""
+
+msgctxt "#30121"
+msgid "any Acestream channel!"
+msgstr ""
+
+msgctxt "#30122"
+msgid "Do you want to download 'Ace Player'?"
+msgstr ""
+
+msgctxt "#30123"
+msgid "This will let you to use the external player option."
+msgstr ""
+
+msgctxt "#30124"
+msgid "Downloading 'Ace Player'"
+msgstr ""
+
+msgctxt "#30125"
+msgid "'Aceplayer.apk' has been downloaded in:"
+msgstr ""
+
+msgctxt "#30126"
+msgid "Do you want to use the external player as default?"
+msgstr ""
+
+msgctxt "#30127"
+msgid "Acestream has been configured successfully!"
+msgstr ""
+
+msgctxt "#30128"
+msgid "p2ptv is only available for certain Linux ARM platforms."
+msgstr ""
+
+msgctxt "#30129"
+msgid "Please select yours from the following list."
+msgstr ""
+
+msgctxt "#30130"
+msgid "Select your operating system"
+msgstr ""
+
+msgctxt "#30131"
+msgid "General"
+msgstr ""
+
+msgctxt "#30132"
+msgid "Repeat configuration on the next run"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Force use of the Kodi internal player"
+msgstr ""
+
+msgctxt "#30134"
+msgid "Enable debug mode"
+msgstr ""
+
+msgctxt "#30135"
+msgid "Enable history"
+msgstr ""
+
+msgctxt "#30136"
+msgid "Number of items to save"
+msgstr ""
+
+msgctxt "#30137"
+msgid "Clean the history"
+msgstr ""
+
+msgctxt "#30138"
+msgid "SopCast configuration"
+msgstr ""
+
+msgctxt "#30139"
+msgid "Player type"
+msgstr ""
+
+msgctxt "#30140"
+msgid "Find IP address automatically"
+msgstr ""
+
+msgctxt "#30141"
+msgid "IP address"
+msgstr ""
+
+msgctxt "#30142"
+msgid "Local port"
+msgstr ""
+
+msgctxt "#30143"
+msgid "Video port"
+msgstr ""
+
+msgctxt "#30144"
+msgid "Buffer size"
+msgstr ""
+
+msgctxt "#30145"
+msgid "Player start timeout"
+msgstr ""
+
+msgctxt "#30146"
+msgid "Player start delay"
+msgstr ""
+
+msgctxt "#30147"
+msgid "Service creation timeout"
+msgstr ""
+
+msgctxt "#30148"
+msgid "Stream creation timeout"
+msgstr ""
+
+msgctxt "#30149"
+msgid "Auto-detect Android AppID"
+msgstr ""
+
+msgctxt "#30150"
+msgid "Custom AppID"
+msgstr ""
+
+msgctxt "#30151"
+msgid "Acestream configuration"
+msgstr ""
+
+msgctxt "#30152"
+msgid "Ace Stream"
+msgstr ""
+
+msgctxt "#30153"
+msgid "AceStream player type"
+msgstr ""
+
+msgctxt "#30154"
+msgid "AceStream command"
+msgstr ""
+
+msgctxt "#30155"
+msgid "AceStream alternative command"
+msgstr ""
+
+msgctxt "#30156"
+msgid "AceStream Engine IP address"
+msgstr ""
+
+msgctxt "#30157"
+msgid "AceStream engine port"
+msgstr ""
+
+msgctxt "#30158"
+msgid "AceStream Engine player port"
+msgstr ""
+
+msgctxt "#30159"
+msgid "Show AceStream Engine stats on video OSD"
+msgstr ""
+
+msgctxt "#30160"
+msgid "Auto pause mode"
+msgstr ""
+
+msgctxt "#30161"
+msgid "Keep downloaded files on disk"
+msgstr ""
+
+msgctxt "#30162"
+msgid "Download path"
+msgstr ""
+
+msgctxt "#30163"
+msgid "Shutdown AceStream engine on playback stop"
+msgstr ""
+
+msgctxt "#30164"
+msgid "Shutdown type"
+msgstr ""
+
+msgctxt "#30165"
+msgid "Custom shutdown command"
+msgstr ""
+
+msgctxt "#30166"
+msgid "Play a URL address"
+msgstr ""
+
+msgctxt "#30167"
+msgid "Lists/channels"
+msgstr ""
+
+msgctxt "#30169"
+msgid "Channels lists"
+msgstr ""
+
+msgctxt "#30170"
+msgid "Menu items color"
+msgstr ""
+
+msgctxt "#30171"
+msgid "Add a channels list"
+msgstr ""
+
+msgctxt "#30172"
+msgid "Select the location of the list:"
+msgstr ""
+
+msgctxt "#30173"
+msgid "URL address"
+msgstr ""
+
+msgctxt "#30174"
+msgid "Local file"
+msgstr ""
+
+msgctxt "#30175"
+msgid "Select the list:"
+msgstr ""
+
+msgctxt "#30176"
+msgid "Give the list a name"
+msgstr ""
+
+msgctxt "#30177"
+msgid "The list has been successfully added"
+msgstr ""
+
+msgctxt "#30178"
+msgid "Enter the URL address of the list"
+msgstr ""
+
+msgctxt "#30179"
+msgid "The list has been successfully deleted!"
+msgstr ""
+
+msgctxt "#30180"
+msgid "Delete the channels list"
+msgstr ""
+
+msgctxt "#30181"
+msgid "The channels list is unavailable!"
+msgstr ""
+
+msgctxt "#30182"
+msgid "The protocol of the channel is not supported!"
+msgstr ""
+
+msgctxt "#30183"
+msgid "Peer-to-Peer TV is instable on Mac OS X."
+msgstr ""
+
+msgctxt "#30184"
+msgid "Initializing..."
+msgstr ""
+
+msgctxt "#30185"
+msgid "Select an option"
+msgstr ""
+
+msgctxt "#30186"
+msgid "Informations"
+msgstr ""
+
+msgctxt "#30187"
+msgid "Cannot obtain info!"
+msgstr ""
+
+msgctxt "#30188"
+msgid "Name: "
+msgstr ""
+
+msgctxt "#30189"
+msgid "Author: "
+msgstr ""
+
+msgctxt "#30190"
+msgid "Language: "
+msgstr ""
+
+msgctxt "#30191"
+msgid "Version: "
+msgstr ""
+
+msgctxt "#30192"
+msgid "List type: "
+msgstr ""
+
+msgctxt "#30193"
+msgid "Incorrect metadata!"
+msgstr ""

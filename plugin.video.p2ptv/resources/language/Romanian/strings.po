@@ -1,0 +1,781 @@
+# Kodi Media Center language file
+# Addon Name: p2ptv
+# Addon id: plugin.video.p2ptv
+# Addon Provider: Mario Bălănică
+msgid ""
+msgstr ""
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+msgctxt "#30000"
+msgid "p2ptv"
+msgstr "p2ptv"
+
+msgctxt "#30001"
+msgid "My channels"
+msgstr "Canalele mele"
+
+msgctxt "#30002"
+msgid "History"
+msgstr "Istoric"
+
+msgctxt "#30003"
+msgid "AceStream: "
+msgstr "AceStream:"
+
+msgctxt "#30004"
+msgid "SopCast: "
+msgstr "SopCast:"
+
+msgctxt "#30005"
+msgid "Play an Acestream URI / Torrent URI"
+msgstr "Redă un URI Acestream / Torrent URI"
+
+msgctxt "#30006"
+msgid "Play a local .torrent file"
+msgstr "Redă un fișier .torrent local"
+
+msgctxt "#30007"
+msgid "Play a SopCast ID"
+msgstr "Redă un ID SopCast"
+
+msgctxt "#30008"
+msgid "Play a SopCast URI"
+msgstr "Redă un URI SopCast"
+
+msgctxt "#30009"
+msgid "Add a channel"
+msgstr "Adaugă canal"
+
+msgctxt "#30010"
+msgid "URL Address of the channel"
+msgstr "Adresa URL a canalului"
+
+msgctxt "#30011"
+msgid "Invalid URL Address!"
+msgstr "Adresa URL nu este validă!"
+
+msgctxt "#30012"
+msgid "Do you want to set a custom image for the channel?"
+msgstr "Doriți să setați o imagine customizată pentru canal?"
+
+msgctxt "#30013"
+msgid "Choose the image"
+msgstr "Alege imaginea"
+
+msgctxt "#30014"
+msgid "Channel name"
+msgstr "Numele canalului"
+
+msgctxt "#30015"
+msgid "The channel has been added successfully!"
+msgstr "Canalul a fost adăugat!"
+
+msgctxt "#30016"
+msgid "The channel has been deleted!"
+msgstr "Canalul a fost șters!"
+
+msgctxt "#30017"
+msgid "Setting changed successfully!"
+msgstr "Setarea a fost schimbată!"
+
+msgctxt "#30018"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "#30019"
+msgid "URI"
+msgstr "URI"
+
+msgctxt "#30020"
+msgid "User ID"
+msgstr "ID Utilizator"
+
+msgctxt "#30021"
+msgid "User URI"
+msgstr "URI Utilizator"
+
+msgctxt "#30022"
+msgid "Acestream URI"
+msgstr "URI Acestream"
+
+msgctxt "#30023"
+msgid "Extracting module contents. Please wait."
+msgstr "Se extrage conținutul pachetului. Vă rugăm așteptați."
+
+msgctxt "#30024"
+msgid "Removing files."
+msgstr "Se șterg fișiere."
+
+msgctxt "#30025"
+msgid "Remove from my channels"
+msgstr "Șterge din lista mea de canale"
+
+msgctxt "#30026"
+msgid "Add to my channels list"
+msgstr "Adaugă la lista mea de canale"
+
+msgctxt "#30027"
+msgid "OS:Windows -> SopCast configuration is incomplete!"
+msgstr "OS:Windows -> Configurația SopCast este incompletă!"
+
+msgctxt "#30028"
+msgid "Enable 'Configuration on next run' in the addon settings"
+msgstr "Activați 'Repetă configurarea la următoarea pornire' în setările addon-ului"
+
+msgctxt "#30029"
+msgid "and restart Kodi (as administrator)."
+msgstr "și reporniți Kodi cu drepturi de administrator (Run As Administrator)"
+
+msgctxt "#30030"
+msgid "Checking SopCast service. Please wait..."
+msgstr "Se verifică serviciul SopCast. Vă rugăm așteptați..."
+
+msgctxt "#30031"
+msgid "Service created. Attempting to play..."
+msgstr "Serviciu creat. Se încearcă redarea canalului..."
+
+msgctxt "#30032"
+msgid "Channel initialization failed"
+msgstr "Inițializarea canalului a eșuat"
+
+msgctxt "#30033"
+msgid "Another instance of SopCast is still running on the background"
+msgstr "O altă instanță a serviciului SopCast înca rulează în fundal"
+
+msgctxt "#30034"
+msgid "Do you want to play it?"
+msgstr "Doriți să o redați?"
+
+msgctxt "#30035"
+msgid "Loading the channel. Please wait %s seconds."
+msgstr "Se încarcă canalul. Vă rugăm așteptați %s secunde."
+
+msgctxt "#30036"
+msgid "Waiting till timeout..."
+msgstr "Se așteaptă până la expirare..."
+
+msgctxt "#30037"
+msgid "Choose the .torrent file."
+msgstr "Alegeți fișierul .torrent stocat local."
+
+msgctxt "#30038"
+msgid "Starting Acestream.. (through proxy)"
+msgstr "Pornesc AceStream.. (prin proxy)"
+
+msgctxt "#30039"
+msgid "If the playback fails, try to increase the player"
+msgstr "Dacă redarea canalului eșuează, încercați să mariți timpul de așteptare"
+
+msgctxt "#30040"
+msgid "timeout!"
+msgstr "expirat!"
+
+msgctxt "#30041"
+msgid "Acestream module is not installed."
+msgstr "Modulul AceStream nu este instalat."
+
+msgctxt "#30042"
+msgid "Torrent not available or invalid."
+msgstr "Fișierul torrent este indisponibil sau invalid."
+
+msgctxt "#30043"
+msgid "Starting..."
+msgstr "Pornește..."
+
+msgctxt "#30044"
+msgid "Awaiting response"
+msgstr "Se așteaptă răspunsul"
+
+msgctxt "#30045"
+msgid "Connecting"
+msgstr "Se conectează"
+
+msgctxt "#30046"
+msgid "Starting Acestream engine."
+msgstr "Pornesc serviciul AceStream."
+
+msgctxt "#30047"
+msgid "Initial wait: "
+msgstr "Așteptare inițiala: "
+
+msgctxt "#30048"
+msgid "seconds"
+msgstr "secunde"
+
+msgctxt "#30049"
+msgid "Playing"
+msgstr "Se redă"
+
+msgctxt "#30050"
+msgid "Link received"
+msgstr "Legatură primită"
+
+msgctxt "#30051"
+msgid "Saving the file"
+msgstr "Se salvează fișierul"
+
+msgctxt "#30052"
+msgid "Downloading"
+msgstr "Se descarcă"
+
+msgctxt "#30053"
+msgid "Loading..."
+msgstr "Se încarcă..."
+
+msgctxt "#30054"
+msgid "Loading Acestream"
+msgstr "Se încarcă AceStream"
+
+msgctxt "#30055"
+msgid "AceStream engine is waiting"
+msgstr "Serviciul AceStream așteaptă"
+
+msgctxt "#30056"
+msgid "Playing torrent file."
+msgstr "Se redă fișierul torrent."
+
+msgctxt "#30057"
+msgid "No response"
+msgstr "Nici un răspuns"
+
+msgctxt "#30058"
+msgid "Verifying data"
+msgstr "Se verifică datele"
+
+msgctxt "#30059"
+msgid "Pre-buffering"
+msgstr "Se face pre-buffering..."
+
+msgctxt "#30060"
+msgid "Downloading"
+msgstr "Se descarcă"
+
+msgctxt "#30061"
+msgid "Buffering"
+msgstr "Se face buffering..."
+
+msgctxt "#30062"
+msgid "Acestream Engine"
+msgstr "Modulul AceStream"
+
+msgctxt "#30063"
+msgid "Stats"
+msgstr "Statistici"
+
+msgctxt "#30064"
+msgid "Action:"
+msgstr "Acțiune:"
+
+msgctxt "#30065"
+msgid "Download:"
+msgstr "Descărcare:"
+
+msgctxt "#30066"
+msgid "Upload:"
+msgstr "Încarcare:"
+
+msgctxt "#30067"
+msgid "Seeds:"
+msgstr "Donatori:"
+
+msgctxt "#30068"
+msgid "Downloaded:"
+msgstr "Descărcat:"
+
+msgctxt "#30069"
+msgid "Uploaded:"
+msgstr "Încărcat:"
+
+msgctxt "#30070"
+msgid "Left:"
+msgstr "Rămas:"
+
+msgctxt "#30071"
+msgid "seconds"
+msgstr "secunde"
+
+msgctxt "#30072"
+msgid "Unable to detect your operating system"
+msgstr "Nu se poate detecta sistemul de operare utilizat"
+
+msgctxt "#30073"
+msgid "Select it from the list"
+msgstr "Selectați-l din listă"
+
+msgctxt "#30074"
+msgid "Are you using OpenELEC x86_x64?"
+msgstr "Folosiți OpenELEC x86_x64?"
+
+msgctxt "#30075"
+msgid "Are you using OpenELEC i386?"
+msgstr "Folosiți OpenELEC i386?"
+
+msgctxt "#30076"
+msgid "Downloading SopCast modules..."
+msgstr "Se descarcă modulele SopCast..."
+
+msgctxt "#30077"
+msgid "OS:Windows -> Kodi has to be running as administrator."
+msgstr "OS:Windows -> Kodi trebuie să ruleze ca administrator."
+
+msgctxt "#30078"
+msgid "to configure SopCast."
+msgstr "pentru a configura SopCast."
+
+msgctxt "#30079"
+msgid "Checking if SopCast is installed..."
+msgstr "Se verifică dacă SopCast este instalat..."
+
+msgctxt "#30080"
+msgid "Finished."
+msgstr "Terminat."
+
+msgctxt "#30081"
+msgid "Sopcast is not installed."
+msgstr "SopCast nu este instalat."
+
+msgctxt "#30082"
+msgid "Download version 4.0 from SopCast.org"
+msgstr "Descarcați versiunea 4.0 de pe SopCast.org"
+
+msgctxt "#30083"
+msgid "OS:Windows -> Getting user's ID..."
+msgstr "OS:Windows -> Se obține ID-ul utilizatorului..."
+
+msgctxt "#30084"
+msgid "Unable to get users list"
+msgstr "Nu se poate obține lista de utilizatori"
+
+msgctxt "#30085"
+msgid "OS:Windows -> Getting user's ID..."
+msgstr "OS:Windows -> Se obține ID-ul utilizatorului..."
+
+msgctxt "#30086"
+msgid "Starting 'SRVany' download..."
+msgstr "Pornesc descărcarea 'SRVany'..."
+
+msgctxt "#30087"
+msgid "Downloading 'SRVany'..."
+msgstr "Se descarcă 'SRVany'..."
+
+msgctxt "#30088"
+msgid "Creating 'sopcastp2p' service..."
+msgstr "Se creează serviciul 'sopcastp2p'..."
+
+msgctxt "#30089"
+msgid "Unable to create the service!"
+msgstr "Nu se poate crea serviciul!"
+
+msgctxt "#30090"
+msgid "Modifying registries..."
+msgstr "Se modifică regiștrii..."
+
+msgctxt "#30091"
+msgid "Error: Unable to modify the registries."
+msgstr "Eroare: Regiștrii nu pot fi modificați."
+
+msgctxt "#30092"
+msgid "Trying to get service permissions..."
+msgstr "Se încearcă obținerea permisiunilor de la serviciu..."
+
+msgctxt "#30093"
+msgid "Error: Unable to change the permissions."
+msgstr "Eroare: Permisiunile nu pot fi schimbate."
+
+msgctxt "#30094"
+msgid "Trying to set service permissions..."
+msgstr "Se încearcă obținerea permisiunilor de la serviciu..."
+
+msgctxt "#30095"
+msgid "Error: Unable to change the service permissions.
+msgstr "Eroare: Permisiunile nu pot fi schimbate."
+
+msgctxt "#30096"
+msgid "Starting 'regini' download..."
+msgstr "Pornesc descărcarea 'regini'..."
+
+msgctxt "#30097"
+msgid "Downloading 'regini'..."
+msgstr "Se descarcă 'regini'..."
+
+msgctxt "#30098"
+msgid "Running 'regini'..."
+msgstr "Se rulează 'regini'..."
+
+msgctxt "#30099"
+msgid "SopCast has been configured successfully!"
+msgstr "SopCast a fost configurat cu succes!"
+
+msgctxt "#30100"
+msgid "Not available for the architecture of your Mac."
+msgstr "Serviciu indisponibil pe arhitectura Mac-ului dvs."
+
+msgctxt "#30101"
+msgid "By default, SopCast will use the Kodi player."
+msgstr "Implicit, modulul SopCast va utiliza Kodi pentru a reda canalele."
+
+msgctxt "#30103"
+msgid "Do you want to use an external application/player?"
+msgstr "Doriți să utilizați un player extern?"
+
+msgctxt "#30104"
+msgid "Click 'ok' to download SopCast.apk"
+msgstr "Apăsați 'ok' pentru a descărca SopCast.apk"
+
+msgctxt "#30105"
+msgid "Select a folder to save the .apk files"
+msgstr "Selectați folderul de salvare a fișierelor .apk"
+
+msgctxt "#30106"
+msgid "Downloading 'SopCast.apk'"
+msgstr "Se descarcă SopCast.apk"
+
+msgctxt "#30107"
+msgid "SopCast.apk has been downloaded to:"
+msgstr "SopCast.apk a fost descărcat în locația:"
+
+msgctxt "#30108"
+msgid "Please install it!"
+msgstr "Vă rugăm să-l instalați!"
+
+msgctxt "#30109"
+msgid "The AppID was not detected"
+msgstr "ID-ul aplicației nu a fost găsit"
+
+msgctxt "#30110"
+msgid "Downloading AceStream modules..."
+msgstr "Se descarcă modulele AceStream..."
+
+msgctxt "#30111"
+msgid "Downloading AceStream bundle for Android..."
+msgstr "Se descarcă pachetul AceStream pentru Android..."
+
+msgctxt "#30112"
+msgid "By default, p2ptv will use its integrated AceStream engine"
+msgstr "Implicit, p2ptv va utiliza modulul AceStream integrat"
+
+msgctxt "#30113"
+msgid "Do you want to download and use the app instead?"
+msgstr "Doriți să descărcați și să utilizați aplicația oficială în loc?"
+
+msgctxt "#30114"
+msgid "It is necessary to have the 'acestreamengine.apk' file"
+msgstr "Este necesar să aveți fișierul 'acestreamengine.apk'"
+
+msgctxt "#30115"
+msgid "installed to play Acestreams."
+msgstr "instalat pentru a rula canale AceStream."
+
+msgctxt "#30116"
+msgid "It will be downloaded now!"
+msgstr "Va fi descărcat acum!"
+
+msgctxt "#30117"
+msgid "Downloading 'AcestreamEngine.apk'"
+msgstr "Se descarcă 'AcestreamEngine.apk'"
+
+msgctxt "#30118"
+msgid "'AcestreamEngine.apk' has been downloaded in:"
+msgstr "'AcestreamEngine.apk' a fost descărcat în locația:"
+
+msgctxt "#30119"
+msgid "Don't forget that AcestreamEngine app"
+msgstr "Nu uitați că aplicația AcestreamEngine"
+
+msgctxt "#30120"
+msgid "should be running before starting"
+msgstr "trebuie să fie pornită înainte de a reda"
+
+msgctxt "#30121"
+msgid "any Acestream channel!"
+msgstr "vrun canal Acestream!"
+
+msgctxt "#30122"
+msgid "Do you want to download 'Ace Player'?"
+msgstr "Doriți să descărcați aplicația 'Ace Player'"
+
+msgctxt "#30123"
+msgid "This will let you to use the external player option."
+msgstr "Această aplicație va activa funcția de redare a canalelor AceStream într-un player extern."
+
+msgctxt "#30124"
+msgid "Downloading 'Ace Player'"
+msgstr "Se descarcă 'Ace Player'"
+
+msgctxt "#30125"
+msgid "'Aceplayer.apk' has been downloaded in:"
+msgstr "'Aceplayer.apk' a fost descărcat în locația:"
+
+msgctxt "#30126"
+msgid "Do you want to use the external player as default?"
+msgstr "Doriți să utilizați playerul extern ca mod de redare implicit?"
+
+msgctxt "#30127"
+msgid "Acestream has been configured successfully!"
+msgstr "Ace Stream a fost configurat cu succes!"
+
+msgctxt "#30128"
+msgid "p2ptv is only available for certain Linux ARM platforms."
+msgstr "p2ptv este disponibil doar pentru anumite platforme ARM cu OS Linux."
+
+msgctxt "#30129"
+msgid "Please select yours from the following list."
+msgstr "Vă rugăm să vă selectați sistemul de operare din listă."
+
+msgctxt "#30130"
+msgid "Select your operating system"
+msgstr "Selectați-vă sistemul de operare"
+
+msgctxt "#30131"
+msgid "General"
+msgstr "General"
+
+msgctxt "#30132"
+msgid "Repeat configuration on the next run"
+msgstr "Repetă configurarea la următoarea pornire"
+
+msgctxt "#30133"
+msgid "Force use of the Kodi internal player"
+msgstr "Utilizați forțat playerul intern Kodi"
+
+msgctxt "#30134"
+msgid "Enable debug mode"
+msgstr "Activați modul de depanare"
+
+msgctxt "#30135"
+msgid "Enable history"
+msgstr "Activați istoricul canalelor redate"
+
+msgctxt "#30136"
+msgid "Number of items to save"
+msgstr "Numărul de elemente pentru salvare"
+
+msgctxt "#30137"
+msgid "Clean the history"
+msgstr "Curăță istoricul canalelor redate"
+
+msgctxt "#30138"
+msgid "SopCast configuration"
+msgstr "Configurare SopCast"
+
+msgctxt "#30139"
+msgid "Player type"
+msgstr "Tipul player-ului"
+
+msgctxt "#30140"
+msgid "Find IP address automatically"
+msgstr "Găsește adresa IP automat"
+
+msgctxt "#30141"
+msgid "IP address"
+msgstr "Adresa IP"
+
+msgctxt "#30142"
+msgid "Local port"
+msgstr "Port local"
+
+msgctxt "#30143"
+msgid "Video port"
+msgstr "Port video"
+
+msgctxt "#30144"
+msgid "Buffer size"
+msgstr "Mărimea buffer-ului"
+
+msgctxt "#30145"
+msgid "Player start timeout"
+msgstr "Timp alocat player-ului să pornească"
+
+msgctxt "#30146"
+msgid "Player start delay"
+msgstr "Intârzie pornirea player-ului"
+
+msgctxt "#30147"
+msgid "Service creation timeout"
+msgstr "Timp alocat creeării serviciului"
+
+msgctxt "#30148"
+msgid "Stream creation timeout"
+msgstr "Timp alocat creeării canalului"
+
+msgctxt "#30149"
+msgid "Auto-detect Android AppID"
+msgstr "Detectează automat ID-ul aplicației Android"
+
+msgctxt "#30150"
+msgid "Custom AppID"
+msgstr "ID aplicație customizat"
+
+msgctxt "#30151"
+msgid "Acestream configuration"
+msgstr "Configurare Ace Stream"
+
+msgctxt "#30152"
+msgid "Ace Stream"
+msgstr "Ace Stream"
+
+msgctxt "#30153"
+msgid "AceStream player type"
+msgstr "Tipul player-ului AceStream"
+
+msgctxt "#30154"
+msgid "AceStream command"
+msgstr "Comandă AceStream"
+
+msgctxt "#30155"
+msgid "AceStream alternative command"
+msgstr "Comandă alternativă AceStream"
+
+msgctxt "#30156"
+msgid "AceStream Engine IP address"
+msgstr "Adresa IP Acestream Engine"
+
+msgctxt "#30157"
+msgid "AceStream engine port"
+msgstr "Port-ul AceStream Engine"
+
+msgctxt "#30158"
+msgid "AceStream Engine player port"
+msgstr "Port-ul de redare AceStream Engine"
+
+msgctxt "#30159"
+msgid "Show AceStream Engine stats on video OSD"
+msgstr "Afișează statistici despre Acestream în OSD"
+
+msgctxt "#30160"
+msgid "Auto pause mode"
+msgstr "Modul 'pauză automată'"
+
+msgctxt "#30161"
+msgid "Keep downloaded files on disk"
+msgstr "Păstrează fișierele descărcate pe disc"
+
+msgctxt "#30162"
+msgid "Download path"
+msgstr "Locația descărcărilor"
+
+msgctxt "#30163"
+msgid "Shutdown AceStream engine on playback stop"
+msgstr "Oprește modulul Acestream după oprirea player-ului"
+
+msgctxt "#30164"
+msgid "Shutdown type"
+msgstr "Modul de închidere"
+
+msgctxt "#30165"
+msgid "Custom shutdown command"
+msgstr "Comandă customizată de închidere"
+
+msgctxt "#30166"
+msgid "Play a URL address"
+msgstr "Redă o adresa URL"
+
+msgctxt "#30167"
+msgid "Lists/channels"
+msgstr "Liste/canale"
+
+msgctxt "#30169"
+msgid "Channels lists"
+msgstr "Liste de canale"
+
+msgctxt "#30170"
+msgid "Menu items color"
+msgstr "Culoarea elementelor din meniu"
+
+msgctxt "#30171"
+msgid "Add a channels list"
+msgstr "Adaugă o lista de canale"
+
+msgctxt "#30172"
+msgid "Select the location of the list:"
+msgstr "Selectează tipul listei:"
+
+msgctxt "#30173"
+msgid "URL address"
+msgstr "Adresă URL"
+
+msgctxt "#30174"
+msgid "Local file"
+msgstr "Fișier local"
+
+msgctxt "#30175"
+msgid "Select the list:"
+msgstr "Selectează lista:"
+
+msgctxt "#30176"
+msgid "Give the list a name"
+msgstr "Denumiți lista"
+
+msgctxt "#30177"
+msgid "The list has been successfully added"
+msgstr "Lista a fost adaugată cu succes!"
+
+msgctxt "#30178"
+msgid "Enter the URL address of the list"
+msgstr "Introdu adresa URL a listei"
+
+msgctxt "#30179"
+msgid "The list has been successfully deleted!"
+msgstr "Lista a fost eliminată cu succes!"
+
+msgctxt "#30180"
+msgid "Delete the channels list"
+msgstr "Șterge lista de canale"
+
+msgctxt "#30181"
+msgid "The channels list is unavailable!"
+msgstr "Lista de canale este indisponibilă!"
+
+msgctxt "#30182"
+msgid "The protocol of the channel is not supported!"
+msgstr "Protocolul canalului nu este disponibil!"
+
+msgctxt "#30183"
+msgid "Peer-to-Peer TV is instable on Mac OS X."
+msgstr "Peer-to-Peer TV este instabil pe Mac OS X."
+
+msgctxt "#30184"
+msgid "Initializing..."
+msgstr "Se inițializează..."
+
+msgctxt "#30185"
+msgid "Select an option"
+msgstr "Selectează o opțiune"
+
+msgctxt "#30186"
+msgid "Informations"
+msgstr "Informații"
+
+msgctxt "#30187"
+msgid "Cannot obtain info!"
+msgstr "Nu se pot obține informațiile!"
+
+msgctxt "#30188"
+msgid "Name: "
+msgstr "Nume: "
+
+msgctxt "#30189"
+msgid "Author: "
+msgstr "Autor: "
+
+msgctxt "#30190"
+msgid "Language: "
+msgstr "Limba: "
+
+msgctxt "#30191"
+msgid "Version: "
+msgstr "Versiune: "
+
+msgctxt "#30192"
+msgid "List type: "
+msgstr "Tipul listei: "
+
+msgctxt "#30193"
+msgid "Incorrect metadata!"
+msgstr "Metadatele listei sunt incorecte!"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.p2ptv" name="p2ptv" version="1.1.1" provider-name="Mario Bălănică">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests"/>>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ro">Vizionati posturi TV online gratuit.</summary>
+        <summary lang="en">Watch free TV channels online.</summary>
+        <description lang="ro">p2ptv este un addon gratuit ce va permite sa vizionati posturile dvs. TV favorite online oriunde in lume fara restrictii.</description>
+        <description lang="en">p2ptv is a free addon which lets you to watch all your favorite TV channels online anywhere in the world without restrictions.</description>
+        <disclaimer lang="ro">Autorul NU gazduieste continutul multimedia vizionat cu ajutorul acestui addon.</disclaimer>
+        <disclaimer lang="en">The author does NOT host any of the multimedia content you may watch using this addon.</disclaimer>
+        <forum>https://forum.softpedia.com/topic/1064333-programe-tv-online</forum>
+        <website>https://www.p2ptv.ml</website>
+        <source>https://github.com/mariobalanica/plugin.video.p2ptv</source>
+        <platform>all</platform>
+    </extension>
+</addon>
