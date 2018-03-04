@@ -65,7 +65,7 @@
 
 <addon id="plugin.video.digi-online"
        name="Digi-Online"
-       version="0.2.7.a"
+       version="0.2.7.b"
        provider-name="dexterke, Secret Laboratories">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

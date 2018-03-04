@@ -59,11 +59,16 @@ LF.write('--- INIT -------------------' + '\n')
 LF.close()
 
 
-def removeAfter(string, suffix):
+def removeSubstr(string, suffix):
     return string[:string.index(suffix) + len(suffix)]
 
 
-def removeBefore(string, suffix):
+def trimSubstrEnd(string, prefix):
+    part = string.split(prefix)
+    return str(part[1])
+
+
+def trimSubstr(string, suffix):
     part = string.split(suffix)
     return str(part[0])
 
@@ -105,7 +110,7 @@ def ROOT():
   addDir('France 24 [EN]', 'http://www.digi-online.ro/tv/france+24/', setIcon('France24.png'))
   if settings.getSetting('75') == 'true':
     addDir('TV5 Monde [FR]', 'http://' + str(extra_streamSRV) +'/digiedge2/tv5mondee' + str(stream_Quality) +'/index.m3u8?is=75&src=app&t=00000000000000000000000000000000', setIcon('tv5monde.png'))
-  addDir('CNN [EN]', 'http://www.digi-online.ro/tv/cnn/', setIcon('tv.png'))
+  addDir('CNN [EN]', 'http://www.digi-online.ro/tv/cnn/', setIcon('CNN.png'))
 
   addDir('Travel Channel', 'http://www.digi-online.ro/tv/travel+channel/', setIcon('TravelChannel.png'))
   if settings.getSetting('74') == 'true':
@@ -122,20 +127,19 @@ def ROOT():
   addDir('BBC Earth', 'http://www.digi-online.ro/tv/bbc+earth/', setIcon('BBC_Earth.png'))
   addDir('Digi Animal World', 'http://www.digi-online.ro/tv/digi+animal+world/', setIcon('DigiAnimalWorld.png'))
   addDir('Viasat Nature', 'http://www.digi-online.ro/tv/viasat+nature/', setIcon('ViasatNature.png'))
-  addDir('Fishing & Hunting', 'http://www.digi-online.ro/tv/fishing+and+hunting/', setIcon('tv.png'))
-  addDir('CBS Reality', 'http://www.digi-online.ro/tv/cbs+reality/', setIcon('tv.png'))
+  addDir('Fishing & Hunting', 'http://www.digi-online.ro/tv/fishing+and+hunting/', setIcon('PVTV.png'))
+  addDir('CBS Reality', 'http://www.digi-online.ro/tv/cbs+reality/', setIcon('CBSReality.png'))
   if settings.getSetting('72') == 'true':
     addDir('TLC Entertainment', 'http://' + str(extra_streamSRV) +'/digiedge2/tlce' + str(stream_Quality) +'/index.m3u8?is=72&src=app&t=00000000000000000000000000000000', setIcon('TLC.png'))
   if settings.getSetting('73') == 'true':
     addDir('Epop Entertainment', 'http://' + str(extra_streamSRV) +'/digiedge2/eentertainmente' + str(stream_Quality) +'/index.m3u8?is=73&src=app&t=00000000000000000000000000000000', setIcon('tv.png'))
-
 
   addDir('AXN', 'http://www.digi-online.ro/tv/axn/', setIcon('AXN.png'))
   addDir('AXN Spin', 'http://www.digi-online.ro/tv/axn+spin/', setIcon('AXN_Spin.png'))
   addDir('AXN White', 'http://www.digi-online.ro/tv/axn+white/', setIcon('AXN_White.png'))
   addDir('AXN Black', 'http://www.digi-online.ro/tv/axn+black/', setIcon('AXN_Black.png'))
   addDir('Film Cafe', 'http://www.digi-online.ro/tv/film+cafe/', setIcon('FilmCafe.png'))
-  addDir('TNT', 'http://www.digi-online.ro/tv/tnt/', setIcon('TNT.png'))
+  addDir('TNT', 'http://www.digi-online.ro/tv/tnt/', setIcon('TNT2.png'))
   addDir('TV1000', 'http://www.digi-online.ro/tv/tv+1000/', setIcon('TV1000.png'))
   if login_Enabled == "true":
     addDir('Digi Film', 'http://www.digi-online.ro/tv/digi+film/', setIcon('DigiFilm.png'))
@@ -144,15 +148,15 @@ def ROOT():
   addDir('Music Channel', 'http://www.digi-online.ro/tv/music+channel/', setIcon('MusicChannel.png'))
   addDir('Kiss TV', 'http://www.digi-online.ro/tv/kiss+tv/', setIcon('KissTV.png'))
   addDir('HitMusic Channel','http://www.digi-online.ro/tv/hit+music+channel/', setIcon('HitMusicChannel.png'))
-  addDir('Slager TV [HU]','http://www.digi-online.ro/tv/slager+tv/', setIcon('tv.png'))
+  addDir('Slager TV [HU]','http://www.digi-online.ro/tv/slager+tv/', setIcon('SlagerTV.png'))
 
   addDir('Disney Channel', 'http://www.digi-online.ro/tv/disney+channel/', setIcon('DisneyChannel.png'))
   addDir('Megamax', 'http://www.digi-online.ro/tv/megamax/', setIcon('Megamax.png'))
   addDir('Nickelodeon', 'http://www.digi-online.ro/tv/nickelodeon/', setIcon('Nickelodeon.png'))
   addDir('Minimax', 'http://www.digi-online.ro/tv/minimax/', setIcon('Minimax.png'))
   addDir('Disney Junior', 'http://www.digi-online.ro/tv/disney+junior/', setIcon('DisneyJunior.png'))
-  addDir('Cartoon Network', 'http://www.digi-online.ro/tv/cartoon+network/', setIcon('tv.png'))
-  addDir('Boomerang', 'http://www.digi-online.ro/tv/boomerang/', setIcon('tv.png'))
+  addDir('Cartoon Network', 'http://www.digi-online.ro/tv/cartoon+network/', setIcon('CartoonNetw.png'))
+  addDir('Boomerang', 'http://www.digi-online.ro/tv/boomerang/', setIcon('Boomerang.png'))
   addDir('Davinci Learning', 'http://www.digi-online.ro/tv/davinci+learning/', setIcon('DaVinciLearning.png'))
 
   addDir('DigiSport 1', 'http://www.digi-online.ro/tv/digisport+1/', setIcon('DigiSport1.png'))
@@ -168,7 +172,6 @@ def ROOT():
   addDir('Digi24 Brasov', 'http://www.digi-online.ro/tv/digi24+brasov/', setIcon('Digi24.png'))
   addDir('Digi24 Cluj', 'http://www.digi24.ro/live/digi24-cluj-napoca', setIcon('Digi24.png'))
   #addDir('M1', 'https://c402-node62-cdn.connectmedia.hu/1100/746f4587970e6a9d1d77231922604086/5a19fb6f/05.m3u8', setIcon('tv.png'))
-
 
 
 def addDir(name, url, iconimage):
@@ -244,7 +247,6 @@ def processLink(url):
     global sessionID
     f = HTMLParser.HTMLParser()
     url = f.unescape(url)
-    #epochTime = int(time.time())
 
     if debug_Enabled == 'true':
       LF = open(myLogFile, 'a')
@@ -288,7 +290,6 @@ def processLink(url):
 	response = httpPost.read()
 
 	if debug_Enabled == 'true':
-	  #LF.write("processLink epochTime: '" + str(epochTime) + '\'\n')
 	  LF.write("processLink HTTP POST: '" + loginURL + '\'\n')
 	  LF.write("processLink HTTP/1.1 200 OK: '" + response + '\'\n')
 
@@ -303,11 +304,11 @@ def processLink(url):
 
       except:
 	  xbmcgui.Dialog().ok('HTTP POST Error', 'Could not access ' + str(loginURL))
-	  if debug_Enabled == 'true':
-	    LF.write("processLink HTTP POST error '" + loginURL + '\'\n')
+	  errMsg1="processLink HTTP POST error '" + loginURL + '\'\n'
 	  pass
 
       if debug_Enabled == 'true':
+	LF.write(errMsg1)
 	LF.write("processLink uloggedIN: '" + str(uloggedIN) + '\'\n')
 	LF.write("processLink sessionID: '" + str(sessionID) + '\'\n')
     ## END LOGIN
@@ -324,33 +325,17 @@ def processLink(url):
 	  ('Connection', 'keep-alive')
         ]
 
-    ## List cookies
-    if debug_Enabled == 'true':
-      LF.write("processLink HTTP GET '" + url + '\'\n')
-      for cookie in (myCookieJar):
-	LF.write("processLink cookie: " + str(cookie) + '\n')
-
-    ### Load TV Guide
-    #myurl = f.unescape('http://www.digi-online.ro/ghid-tv/')
-    #try:
-	#httpGet = urlopener.open(myurl)
-        #response = httpGet.read()
-	#if debug_Enabled == 'true' and http_log_Enable == 'true':
-	  #LF.write("processLink HTTP/1.1 200 OK: --- mylink --- ---" + '\n')
-	  #LF.write(response + '\n')
-	  #LF.write("processLink: --------- END mylink -----" + '\n')
-    #except:
-    	#xbmcgui.Dialog().ok('Error', 'Could not access ' + str(url))
-	#if debug_Enabled == 'true':
-	  #LF.write("processLink: Could not load URL: '" + myurl + '\'\n')
-	#pass
-
     ## Load Page
     try:
 	httpGet = urlopener.open(url)
         link = httpGet.read()
 
-	if debug_Enabled == 'true' and http_log_Enable == 'true':
+	## List cookies
+	if debug_Enabled == 'true':
+	  LF.write("processLink HTTP GET '" + url + '\'\n')
+	  for cookie in (myCookieJar):
+	    LF.write("processLink cookie: " + str(cookie) + '\n')
+	  if http_log_Enable == 'true':
 	    LF.write("processLink HTTP/1.1 200 OK: --- LINK --- ---" + '\n')
 	    LF.write(link + '\n')
 	    LF.write("processLink: --------- END LINK -----" + '\n')
@@ -371,19 +356,19 @@ def parseInput(url):
     item = None
     infos = None
     match = None
+    errMsg1 = ''
 
-    if debug_Enabled == 'true':
-	LF = open(myLogFile, 'a')
-	LF.write("parseInput URL: '" + url + '\'\n')
-
-    ## Parsed URL is one of the hidden DIGI-Online/RDS programmes
+    ## if parsed URL is one of the hidden DIGI-Online/RDS programmes
     for prog in (hiddenProgrammes):
       if prog in url:
 	result = url
 	httpURLopener = urllib2.build_opener()
 	match = [prog]
-	if debug_Enabled == 'true':
-	  LF.write("parseInput hiddenProgrammes: '" + prog + '\'\n')
+
+    if debug_Enabled == 'true':
+	LF = open(myLogFile, 'a')
+	LF.write("parseInput URL: '" + url + '\'\n')
+	LF.write("parseInput hiddenProgrammes: '" + prog + '\'\n')
 
     if result is None:
       link = processLink(url)
@@ -404,8 +389,7 @@ def parseInput(url):
 	match = ['digi24']
 	print match
 	xbmcgui.Dialog().ok('Error', 'Could not access ' + url)
-	if debug_Enabled == 'true':
-	  LF.write('\n' + "parseInput Error: Could not access '" + url + '\'\n')
+	errMsg1='\n' + "parseInput Error: Could not access '" + url + '\'\n'
 
     if "http://www.digi-online.ro/tv/digi+film/" in url:
       	xbmcgui.Dialog().ok('Error', 'DIGI FILM not yet implemented')
@@ -425,15 +409,15 @@ def parseInput(url):
 	    ('Connection', 'close')
 	  ]
 
-	if debug_Enabled == 'true':
-	  for cookie in (myCookieJar):
-	    LF.write("parseInput cookie: " + str(cookie) + '\n')
-
 	link = 'http://www.digi-online.ro/xhr-gen-stream.php'
 	formdata = urllib.urlencode({'scope': 'digifilm'})
 	httpGet = httpURLopener.open(link, formdata)
 	response = httpGet.read()
+
 	if debug_Enabled == 'true':
+	  LF.write(errMsg1)
+	  for cookie in (myCookieJar):
+	    LF.write("parseInput cookie: " + str(cookie) + '\n')
 	  LF.write("parseInput HTTP POST: '" + link + ' ' + formdata + '\'\n')
 	  LF.write("parseInput HTTP/1.1 200 OK: '" + response + '\'\n')
 
@@ -465,6 +449,7 @@ def parseInput(url):
 	  result = "".join(("http:", result))
 
 	if debug_Enabled == 'true':
+	  LF.write(errMsg1)
 	  LF.write("parseInput HTTPS GET: '" + sslurl + '\'\n')
 	  LF.write("parseInput HTTPS OK (list): '" + mydata + '\'\n')
 	  LF.write("parseInput result: '" + result + '\'\n')
@@ -489,6 +474,7 @@ def parseInput(url):
       link = 'http://balancer.digi24.ro/streamer.php?&scope=' + match[0] + '&key=' + myKey + '&outputFormat=json&type=hls&quality=' + str(stream_Quality)
 
       if debug_Enabled == 'true':
+	LF.write(errMsg1)
 	LF.write("parseInput scope: '" + str(match) + '\'\n')
 	LF.write("parseInput HTTP GET: '" + keyMaster + '\'\n')
 	LF.write("parseInput HTTP/1.1 200 OK (key): '" + myKey + '\'\n')
@@ -518,10 +504,10 @@ def parseInput(url):
 
       except:
 	xbmcgui.Dialog().ok('Error', 'Could not access ' + url)
-	if debug_Enabled == 'true':
-	  LF.write("parseInput: Could not access '" + url + '\'\n')
+	errMsg1="parseInput: Could not access '" + url + '\'\n'
 
       if debug_Enabled == 'true':
+	LF.write(errMsg1)
 	LF.write("parseInput HTTP GET: '" + link + '\'\n')
 	LF.write("parseInput HTTP/1.1 200 OK (json): '" + str(infos) + '\'\n')
 	LF.write("parseInput result: '" + result + '\'\n')
@@ -540,18 +526,17 @@ def parseInput(url):
 	item.setInfo('video', itemInfo)
       except:
 	xbmcgui.Dialog().ok('Error', 'Could not access media')
-	if debug_Enabled == 'true':
-	  LF.write("parseInput: Could not access '" + result + '\'\n')
+	errMsg1="parseInput: Could not access '" + result + '\'\n'
 
     ## Play stream
     if item is not None and result is not None:
       if debug_Enabled == 'true':
+	LF.write(errMsg1)
 	LF.write("xbmc.Player().play(" + result + "," + str(item) + ")" + '\n')
 
       xbmcplugin.setContent(int(sys.argv[1]), 'movies')
       #xbmc.Player().play(result)
       xbmc.Player().play(result, item)
-      #xbmc.Player().play(item=myPlayFile)
 
       if epgInfo_Enabled == 'true':
 	if infoEPGnowP == '':
@@ -562,6 +547,7 @@ def parseInput(url):
 	xbmc.executebuiltin("Notification(Digi-Online, " + nowPlayingTitle + ")")
 
     if debug_Enabled == 'true':
+      LF.write(errMsg1)
       savePlayList(result)
       LF.close()
 
@@ -578,13 +564,12 @@ def savePlayList(url):
 	LF.write("savePlayList URL: '" + url + '\'\n')
 
       if "index.m3u8" in url:
-	url = removeAfter(url, 'index.m3u8')
+	url = removeSubstr(url, 'index.m3u8')
 	response = httpURLopener.open(url)
 	mydata = response.read()
 	if debug_Enabled == 'true':
 	  LF.write("savePlayList HTTP GET: '" + url + '\'\n')
 	  LF.write("savePlayList HTTP/1.1 200 OK: \n" + mydata + '\n')
-	#PF.write(mydata + '\n')
 	PF.write(re.sub('([_A-Za-z0-9.]+).m3u8', '', mydata) + '\n')
 
 	if ".m3u8" in mydata:
