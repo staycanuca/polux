@@ -14,7 +14,7 @@ from utils.webutils import *
 from utils.pluginxbmc import *
 from utils.directoryhandle import *
 
-base_url = 'http://wwwebdigitaltv.do.am/newface/androidsop.html'
+base_url = 'http://wwwebdigitaltv.do.am/bsbtemp/pages/players/sopcasttv_vlc.html'
 
 def module_tree(name,url,iconimage,mode,parser,parserfunction):
 	if not parserfunction: acesearch()
@@ -24,7 +24,7 @@ def acesearch():
 		source = mechanize_browser(base_url)
 	except: source = "";xbmcgui.Dialog().ok(translate(40000),translate(40128))
 	if source:
-		match= re.compile("<a href=\"(.*?)\">.{31}>(.*?)<").findall(source)
+		match= re.compile("href=\"(.+?)\" onClick=\".+?\">(.+?)</a>").findall(source)
 		for acestream,titulo in match:
 			addDir(titulo,acestream,2,os.path.join(current_dir,'icon.png'),len(match),False)
         #xbmc.executebuiltin("Container.SetViewMode(51)")
