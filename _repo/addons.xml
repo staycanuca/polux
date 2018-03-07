@@ -380,7 +380,7 @@
 	</extension>
 </addon>
 
-    <addon id="repository.polux" name="Polux Repo" version="1.0.2" provider-name="polux">
+    <addon id="repository.polux" name="Polux Repo" version="1.0.4" provider-name="polux">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
