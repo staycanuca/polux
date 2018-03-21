@@ -21,7 +21,7 @@
 __scriptname__ = "IPTV TS"
 __author__ = "polux"
 __scriptid__ = "plugin.video.iptvts"
-__version__ = "1.0.4"
+__version__ = "1.0.5"
 
 import urllib, urllib2, re, gzip, socket
 import xbmc,xbmcplugin,xbmcgui,xbmcaddon,sys, os
@@ -142,6 +142,7 @@ def MAIN(url):
     addDir('IPTV Dailylist', 'https://www.dailyiptvlist.com/', 13, 'https://lh3.googleusercontent.com/r4dmeeUHldrCTrbCytHi0sGC0FWpE67yQvrQHy_Tkq7-JnhXEoi--843irMLHNVeBYA=w170')
     addDir('IPTV Freelinks', 'https://www.freeiptvlinks.net/category/iptv-links/', 16, 'https://lh3.googleusercontent.com/r4dmeeUHldrCTrbCytHi0sGC0FWpE67yQvrQHy_Tkq7-JnhXEoi--843irMLHNVeBYA=w170')
     addDir('IPTV Filmover', 'http://iptv.filmover.com/', 19, 'https://lh3.googleusercontent.com/r4dmeeUHldrCTrbCytHi0sGC0FWpE67yQvrQHy_Tkq7-JnhXEoi--843irMLHNVeBYA=w170')
+    addDir('IPTV PLAYLISTS', 'http://textuploader.com/dgh2k/raw', 22, 'https://lh3.googleusercontent.com/r4dmeeUHldrCTrbCytHi0sGC0FWpE67yQvrQHy_Tkq7-JnhXEoi--843irMLHNVeBYA=w170')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 	
 def IPTVSAT(url):
@@ -199,17 +200,7 @@ def FREE(url):
     except: pass
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 	
-def FILMOVER(url):
-    html = getHtml(url)
-    blogpage = re.compile("<h2 class=\"entry-title post-title\"><a href=\"(.+?)\" rel=\"bookmark\">(.+?)</a></h2>", re.DOTALL | re.IGNORECASE).findall(html)
-    for url, name in blogpage:
-        addDir(name, url, 20, 'https://lh3.googleusercontent.com/r4dmeeUHldrCTrbCytHi0sGC0FWpE67yQvrQHy_Tkq7-JnhXEoi--843irMLHNVeBYA=w170')
-    try:
-        nextp = re.compile("<a class=\"next page-numbers\" href=\"(.+?)\">", re.DOTALL | re.IGNORECASE).findall(html)[0]
-        nextp = nextp.replace('&amp;','&')
-        addDir('Next Page', nextp, 19, iptvtsicon)
-    except: pass
-    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
 	
 
 
@@ -299,25 +290,6 @@ def FREEPAGE(url):
         txtfilter = GETFILTER()
         if txtfilter:
             addDir('[COLOR blue]Search all links for: '+txtfilter+'[/COLOR]', url, 18, iptvtsicon)
-        iptvlinks = re.compile("href=\"(.+?)\">", re.DOTALL | re.IGNORECASE).findall(blogpage)
-        i = 1
-        for link in iptvlinks:
-            link = link.replace('&amp;','&')
-            name = 'Link ' + str(i) + ': ' + link
-            addDir(name, link, 2, iptvtsicon)
-            i = i + 1
-    xbmcplugin.endOfDirectory(int(sys.argv[1]))
-	
-def FILMOVERPAGE(url):
-    html = getHtml(url)
-    blogpage = re.compile('<div class="at-above-post addthis_tool".+?<p>(.+?)</p>', re.DOTALL | re.IGNORECASE).findall(html)[0]
-    if '#EXTINF' in blogpage:
-        blogpage = blogpage.replace('<br />', '').replace('&#8211;', ' - ')
-        parsem3u(blogpage)
-    else:
-        txtfilter = GETFILTER()
-        if txtfilter:
-            addDir('[COLOR blue]Search all links for: '+txtfilter+'[/COLOR]', url, 21, iptvtsicon)
         iptvlinks = re.compile("href=\"(.+?)\">", re.DOTALL | re.IGNORECASE).findall(blogpage)
         i = 1
         for link in iptvlinks:
@@ -461,6 +433,37 @@ def FREESEARCHLINKS(url):
     dp.close()
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 	
+def FILMOVER(url):
+    html = getHtml(url)
+    blogpage = re.compile("<h2 class=\"entry-title post-title\"><a href=\"(.+?)\" rel=\"bookmark\">(.+?)</a></h2>", re.DOTALL | re.IGNORECASE).findall(html)
+    for url, name in blogpage:
+        addDir(name, url, 20, 'https://lh3.googleusercontent.com/r4dmeeUHldrCTrbCytHi0sGC0FWpE67yQvrQHy_Tkq7-JnhXEoi--843irMLHNVeBYA=w170')
+    try:
+        nextp = re.compile("<a class=\"next page-numbers\" href=\"(.+?)\">", re.DOTALL | re.IGNORECASE).findall(html)[0]
+        nextp = nextp.replace('&amp;','&')
+        addDir('Next Page', nextp, 19, iptvtsicon)
+    except: pass
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	
+def FILMOVERPAGE(url):
+    html = getHtml(url)
+    blogpage = re.compile('<div class="at-above-post addthis_tool".+?<p>(.+?)</p>', re.DOTALL | re.IGNORECASE).findall(html)[0]
+    if '#EXTINF' in blogpage:
+        blogpage = blogpage.replace('<br />', '').replace('&#8211;', ' - ')
+        parsem3u(blogpage)
+    else:
+        txtfilter = GETFILTER()
+        if txtfilter:
+            addDir('[COLOR blue]Search all links for: '+txtfilter+'[/COLOR]', url, 21, iptvtsicon)
+        iptvlinks = re.compile("href=\"(.+?)\">", re.DOTALL | re.IGNORECASE).findall(blogpage)
+        i = 1
+        for link in iptvlinks:
+            link = link.replace('&amp;','&')
+            name = 'Link ' + str(i) + ': ' + link
+            addDir(name, link, 2, iptvtsicon)
+            i = i + 1
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	
 def FILMOVERSEARCHLINKS(url):
     txtfilter = GETFILTER()
     count = 0
@@ -486,8 +489,14 @@ def FILMOVERSEARCHLINKS(url):
             pass
     dp.close()
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
-
-
+	
+def LISTEPAGE(url):
+    html = getHtml(url)
+    iptvlinks = re.compile("=(.+?)=(.+?)=", re.DOTALL | re.IGNORECASE).findall(html)
+    for name, link in iptvlinks:
+        addDir(name, link, 23, iptvtsicon)
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	
 def IPTV(url):
     try:
         m3u = getHtml(url)
@@ -495,6 +504,15 @@ def IPTV(url):
     except:
         addDir('Nothing found', '', '', '', Folder=False)
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	
+def LISTEIPTV(url):
+    try:
+        m3u = getHtml(url)
+        parsem1u(m3u)
+    except:
+        addDir('Nothing found', '', '', '', Folder=False)
+    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
 
 
 def parsem3u(html, sitechk=True):
@@ -539,6 +557,16 @@ def parsem2u(html, sitechk=True):
                     i += 1
             addPlayLink(name+status, url, 3, iptvtsicon)
             count += 1
+    return count
+	
+def parsem1u(html):
+    match = re.compile('#.+,(.+?)\n(.+?)\n').findall(html)
+    count = 0
+    for name, url in match:
+        status = ""
+        url = url.replace('\r','')
+        addPlayLink(name+status, url, 3, iptvtsicon)
+        count += 1
     return count
 
 
@@ -623,3 +651,5 @@ elif mode == 18: FREESEARCHLINKS(url)
 elif mode == 19: FILMOVER(url)
 elif mode == 20: FILMOVERPAGE(url)
 elif mode == 21: FILMOVERSEARCHLINKS(url)
+elif mode == 22: LISTEPAGE(url)
+elif mode == 23: LISTEIPTV(url)
