@@ -1,0 +1,7 @@
+v1.0.1
+-schimbata tema
+-adaugate toate pluginurile prezentate pe site
+-lista repository
+
+v1.0
+Prima versiune
