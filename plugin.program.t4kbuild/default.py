@@ -16,7 +16,7 @@ base='T4K Build'
 ADDON=xbmcaddon.Addon(id='plugin.program.t4kbuild')
     
     
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 
 
 PATH = "t4kbuild"            
@@ -28,7 +28,7 @@ HOME         =  xbmc.translatePath('special://home/')
 
     
 def CATEGORIES():
-    link = OPEN_URL('https://pastebin.com/raw/uStfWxSr').replace('\n','').replace('\r','')
+    link = OPEN_URL('https://pastebin.com/raw/6nDJcADa').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)
