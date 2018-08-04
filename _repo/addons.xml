@@ -229,6 +229,7 @@
     <import addon="script.module.simplejson" />
      <import addon="script.module.livestreamer" optional="true"/>
      <import addon="script.module.pyamf" optional="true"/>
+	 <import addon="script.module.parsedom" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
