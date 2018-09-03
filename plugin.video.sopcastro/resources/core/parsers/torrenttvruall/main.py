@@ -16,7 +16,7 @@ from utils.pluginxbmc import *
 from utils.directoryhandle import *
 from utils.timeutils import translate_months
 
-base_url = "http://pomoyka.lib.emergate.net/trash/ttv-list/ttv.m3u"
+base_url = "http://91.92.66.82/trash/ttv-list/ttv.m3u"
 
 def module_tree(name,url,iconimage,mode,parser,parserfunction):
 	if not parserfunction: torrenttv()

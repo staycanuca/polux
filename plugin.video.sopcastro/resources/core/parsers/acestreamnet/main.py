@@ -15,7 +15,7 @@ from utils.webutils import *
 from utils.pluginxbmc import *
 from utils.directoryhandle import *
 
-base_url = 'http://pomoyka.lib.emergate.net/trash/ttv-list/ace.all.player.m3u'
+base_url = 'http://91.92.66.82/trash/ttv-list/ace.all.player.m3u'
 
 def module_tree(name,url,iconimage,mode,parser,parserfunction):
 	if not parserfunction: acestreamnet()

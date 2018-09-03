@@ -27,23 +27,7 @@ def sopcast_ucoz():
     conteudo=clean(get_page_source('http://sopcast.ucoz.com'))
     listagem=re.compile('<div class="eTitle" style="text-align:left;"><a href="(.+?)">(.+?)</a>').findall(conteudo)
     for urllist,titulo in listagem:
-    	try:
-    		match = re.compile('\((.*?)\.(.*?)\.(.*?)\. (.*?):(.*?) UTC\) (.*)').findall(titulo)
-    		if match:
-    			for dia,mes,ano,hora,minuto,evento in match:
-                                import datetime
-                                from utils import pytzimp
-                                d = pytzimp.timezone(str(pytzimp.timezone('Europe/London'))).localize(datetime.datetime(int(ano), int(mes), int(dia), hour=int(hora), minute=int(minuto)))
-                                timezona= settings.getSetting('timezone_new')
-                                my_location=pytzimp.timezone(pytzimp.all_timezones[int(timezona)])
-                                convertido=d.astimezone(my_location)
-                                fmt = "%y-%m-%d %H:%M"
-                                time=convertido.strftime(fmt)
-    				addDir('[B][COLOR orange]' + time + '[/B][/COLOR]-' + evento,urllist,401,os.path.join(current_dir,'icon.png'),len(listagem),False,parser="sopcastucoz",parserfunction="play")
-    		else:
-    			addDir(titulo,urllist,401,'',len(listagem),False,parser="sopcastucoz",parserfunction="play")
-    	except:
-    			addDir(titulo,urllist,401,'',len(listagem),False,parser="sopcastucoz",parserfunction="play")
+    	addDir(titulo,urllist,501,'',len(listagem),False,parser="sopcastucoz",parserfunction="play")
 
 def sopcast_ucoz_play(name,url):
     conteudo=clean(get_page_source('http://sopcast.ucoz.com' + url))
@@ -56,7 +40,7 @@ def sopcast_ucoz_play(name,url):
     		if "sop://" in address:
     			titulo.append('' + nume +' Sopcast')
     			ender.append(address)
-    		elif "(ace stream)" in address:
+    		elif "acestrem://" in address:
     			titulo.append('Acestream [' + address.replace(' (ace stream)','') +']')
     			ender.append(address.replace(' (ace stream)',''))
     		else: pass
