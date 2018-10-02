@@ -63,7 +63,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.t4kbuild" name="T4K Build" version="1.0.2" provider-name="Tips4Kodi">
+<addon id="plugin.program.t4kbuild" name="T4K Build" version="1.0.4" provider-name="Tips4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
