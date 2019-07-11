@@ -31,7 +31,7 @@ parser_packages_folder = os.path.join(pastaperfil,'parser-packages')
 
 
 def addon_sopparsers_menu():
-	addDir('[COLOR orange]MagazinMixt[/COLOR]',"http://tvdot.tk/sopcast.xml",101,addonpath + art + 'xml_list_sopcast.png',2,True)
+	#addDir('[COLOR orange]MagazinMixt[/COLOR]',"http://tvdot.tk/sopcast.xml",101,addonpath + art + 'xml_list_sopcast.png',2,True)
 	#if settings.getSetting('parser_disclaimer_three') == "true":
 	#	option= xbmcgui.Dialog().ok(translate(40000),translate(70004),translate(70005),translate(70006))
 	#	if option: settings.setSetting('parser_disclaimer_three',"false")

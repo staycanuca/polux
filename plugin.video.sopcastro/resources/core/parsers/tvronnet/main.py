@@ -24,11 +24,11 @@ def module_tree(name,url,iconimage,mode,parser,parserfunction):
     
 def tron():
     conteudo=clean(get_page_source('http://m.tvron.net'))
-    blogpost = re.findall('<div class="fullc" id=cc0><div class=mobilc id="cm1">(.+?)<div class="full">', conteudo, re.DOTALL)
+    blogpost = re.findall('<div class="fullc" id=cc0><div class=mobilc id="cm1">(.+?)<div class="fullc dn"', conteudo, re.DOTALL)
     if blogpost:
         listagem=re.compile('<a href="(.+?)" class=".+?" title=".+?" id="c-(.+?)">').findall(blogpost[0])
         for urllist,titulo in listagem:
-    	    addDir(titulo,urllist,401,'',len(listagem),False,parser="tvronnet",parserfunction="play")
+    	    addDir(titulo,urllist,501,'',len(listagem),False,parser="tvronnet",parserfunction="play")
 
 def tron_play(name,url):
     conteudo=clean(get_page_source('http://m.tvron.net' + url))
