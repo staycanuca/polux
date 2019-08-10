@@ -28,7 +28,7 @@ def tron():
     if blogpost:
         listagem=re.compile('<a href="(.+?)" class=".+?" title=".+?" id="c-(.+?)">').findall(blogpost[0])
         for urllist,titulo in listagem:
-    	    addDir(titulo,urllist,501,'',len(listagem),False,parser="tvronnet",parserfunction="play")
+    	    addDir(titulo,urllist,501,'',len(listagem),True,parser="tvronnet",parserfunction="play")
 
 def tron_play(name,url):
     conteudo=clean(get_page_source('http://m.tvron.net' + url))

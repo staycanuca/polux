@@ -5,7 +5,7 @@ This plugin is 3rd party and not part of sopcastro addon
 
 MyWebTV
 """
-import sys,os
+import sys,os,requests
 current_dir = os.path.dirname(os.path.realpath(__file__))
 basename = os.path.basename(current_dir)
 core_dir =  current_dir.replace(basename,'').replace('parsers','')
@@ -20,30 +20,41 @@ base_url = 'http://www.mywebtv.info'
 
 def module_tree(name,url,iconimage,mode,parser,parserfunction):
 	if not parserfunction: tron()
+	elif parserfunction == 'post': tron_post(url)
 	elif parserfunction == 'play': tron_play(name,url)
     
 def tron():
     conteudo=clean(get_page_source('http://www.mywebtv.info'))
-    blogpost = re.findall('<ul class="scroll-pane2 style1">(.+?)</ul>', conteudo, re.DOTALL)
+    blogpost = re.findall('<div id="channel">(.+?)<div id="body">', conteudo, re.DOTALL)
     if blogpost:
-        listagem=re.compile('<div  class="strm2"><div onClick=".+?, \'(.+?)\'.+?>Stream (\d) \(sop\)</div>').findall(blogpost[0])
-        for titulo,link in listagem:
-		    urllist = titulo + '/sursa-' + link
-	            addDir(titulo,urllist,501,'',len(listagem),False,parser="mywebtv",parserfunction="play")
+        listagem=re.compile('href="(.+?)".+?<h1 class="title" style=".+?">(.+?)</h1>').findall(blogpost[0])
+        for link,titulo in listagem:
+		    urllist = 'http://www.mywebtv.info' + link
+	            addDir(titulo,urllist,501,os.path.join(current_dir,"icon.png"),1,True,parser="mywebtv",parserfunction="post")
+
+def tron_post(url):
+    conteudo=clean(get_page_source(url))
+    blogpost = re.findall('<div class="sources">(.+?)<div class="epg-header">', conteudo, re.DOTALL)
+    if blogpost:
+        listagem=re.compile('href="(/.+?/sursa-\d)".+?<h2>(Sursa \d)</h2>.+?<h3>(Ace Player|sopcast)</h3>.+?<h3>(.+?)</h3>').findall(blogpost[0])
+        for link,sursa,player,titlu in listagem:
+		    titulo = titlu + ' ' + player + ' ' + sursa
+		    urllist = 'http://www.mywebtv.info' + link
+	            addDir(titulo,urllist,501,os.path.join(current_dir,"icon.png"),1,False,parser="mywebtv",parserfunction="play")
 
 def tron_play(name,url):
-    conteudo=clean(get_page_source('http://www.mywebtv.info/' + url))
-    blogpost = re.findall('<div id="player">(.+?)</div>', conteudo, re.DOTALL)
+    conteudo=clean(get_page_source(url))
+    blogpost = re.findall('<div class="player player-ch">(.+?)<div class="play-info">', conteudo, re.DOTALL)
     if blogpost:
     	ender=[]
     	titulo=[]
-    	match = re.compile('value="(sop://.+?)".+?value="(.+?)"').findall(blogpost[0])
-    	for address,nume in match:
+    	match = re.compile('href="(acestream://|sop://.+?)"').findall(blogpost[0])
+    	for address in match:
     		if "sop://" in address:
-    			titulo.append('' + nume + ' - ' + name +' sopcast link')
+    			titulo.append('sopcast link')
     			ender.append(address)
     		elif "acestream://" in address:
-    			titulo.append('' + nume + ' - ' + name +' acestream link')
+    			titulo.append('acestream link')
     			ender.append(address)
     		else: pass
     	if ender and titulo:
