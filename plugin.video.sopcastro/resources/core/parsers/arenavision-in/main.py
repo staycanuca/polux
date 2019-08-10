@@ -3,7 +3,7 @@
 """
 This plugin is 3rd party and not part of sopcastro addon
 
-Arenavision.us
+Arenavision.in
 
 """
 import sys,os,requests
@@ -18,7 +18,7 @@ import acestream as ace
 import sopcast as sop
 from cleaner import *
 
-base_url = "http://www.arenavision.us"
+base_url = "https://arenavision.in/"
 
 def module_tree(name,url,iconimage,mode,parser,parserfunction):
 	if not parserfunction: arenavision_menu()
@@ -30,8 +30,16 @@ def module_tree(name,url,iconimage,mode,parser,parserfunction):
 
 def arenavision_menu():
 	headers = {
-		"Cookie" : "beget=begetok; has_js=1;"
-	}
+        'Connection': 'keep-alive',
+        'Pragma': 'no-cache',
+        'Cache-Control': 'no-cache',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'es-ES,es;q=0.9,ca;q=0.8,en;q=0.7',
+        'Cookie' : 'beget=begetok; has_js=1;'
+    }
 	try:
 		source = requests.get(base_url,headers=headers).text
 	except: source="";xbmcgui.Dialog().ok(translate(40000),translate(40128))
@@ -39,16 +47,24 @@ def arenavision_menu():
 		match = re.compile('leaf"><a href="([^"]+?)"[^>]*>(.+?)</a').findall(source)
 		for link, nome in match:
 			if "events" in nome.lower():
-				addDir("[B][COLOR red]Agenda/Schedule[/COLOR][/B]",base_url+link,401,os.path.join(current_dir,"icon.png"),1,True,parser="arenavision-us",parserfunction="arenavision_schedule")
-			elif ("#" in nome.lower() or "av" in nome.lower() or "arenavision" in nome.lower()) and link != "/":
-				addDir(nome,link,401,os.path.join(current_dir,"icon.png"),1,False,parser="arenavision-us",parserfunction="arenavision_streams")
+				addDir("[B][COLOR red]Agenda/Schedule[/COLOR][/B]",base_url+link,401,os.path.join(current_dir,"icon.png"),1,True,parser="arenavision-in",parserfunction="arenavision_schedule")
+			elif ("#" in nome.lower() or "av" in nome.lower() or "ArenaVision" in nome.lower()) and link != "/":
+				addDir(nome,base_url+link,401,os.path.join(current_dir,"icon.png"),1,False,parser="arenavision-in",parserfunction="arenavision_streams")
 			else: pass
 
 
 def arenavision_streams(name,url):
 	headers = {
-		"Cookie" : "beget=begetok; has_js=1;"
-	}
+        'Connection': 'keep-alive',
+        'Pragma': 'no-cache',
+        'Cache-Control': 'no-cache',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'es-ES,es;q=0.9,ca;q=0.8,en;q=0.7',
+        'Cookie' : 'beget=begetok; has_js=1;'
+    }
 	try:
 		source = requests.get(url,headers=headers).text
 	except: source="";xbmcgui.Dialog().ok(translate(40000),translate(40128))
@@ -56,14 +72,22 @@ def arenavision_streams(name,url):
 		match = re.compile('sop://(.+?)"').findall(source)
 		if match: sop.sopstreams(name,os.path.join(current_dir,"icon.png"),"sop://" + match[0])
 		else:
-			match = re.compile('this.loadPlayer\("(.+?)"').findall(source)
+			match = re.compile('href="(acestream://.+?)"').findall(source)
 			if match: ace.acestreams(name,os.path.join(current_dir,"icon.png"),match[0])
 			else: xbmcgui.Dialog().ok(translate(40000),translate(40022))
 
 def arenavision_schedule(url):
 	headers = {
-		"Cookie" : "beget=begetok; has_js=1;"
-	}
+        'Connection': 'keep-alive',
+        'Pragma': 'no-cache',
+        'Cache-Control': 'no-cache',
+        'Upgrade-Insecure-Requests': '1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+        'Accept-Encoding': 'gzip, deflate',
+        'Accept-Language': 'es-ES,es;q=0.9,ca;q=0.8,en;q=0.7',
+        'Cookie' : 'beget=begetok; has_js=1;'
+    }
 	try:
 		source = requests.get(url,headers=headers).text
 	except: source="";xbmcgui.Dialog().ok(translate(40000),translate(40128))
@@ -95,7 +119,7 @@ def arenavision_schedule(url):
 
 			streams = [(language, channels.split("-")) for channels, language in channelsAndLanguages]
 
-			addDir('[B][COLOR red]{0}[/COLOR] [COLOR white]{1}[/COLOR][/B] {3} [COLOR yellow][{2}][/COLOR]'.format(timeStr, removeNonAscii(sport), removeNonAscii(competition), removeNonAscii(event)), str(streams),401,os.path.join(current_dir,"icon.png"),1,False,parser="arenavision-us",parserfunction="arenavision_chooser")
+			addDir('[B][COLOR red]{0}[/COLOR] [COLOR white]{1}[/COLOR][/B] {3} [COLOR yellow][{2}][/COLOR]'.format(timeStr, removeNonAscii(sport), removeNonAscii(competition), removeNonAscii(event)), str(streams),401,os.path.join(current_dir,"icon.png"),1,False,parser="arenavision-in",parserfunction="arenavision_chooser")
 		return None
 
 
@@ -109,7 +133,7 @@ def arenavision_chooser(url):
 
 	index = xbmcgui.Dialog().select("On...", stringList)
 	if index > -1:
-		arenavision_streams("ArenaVision {0}".format(channelList[index]), "http://arenavision2018.ml" + "/" + str(channelList[index]).zfill(2))
+		arenavision_streams("ArenaVision {0}".format(channelList[index]), "https://arenavision.in" + "/" + str(channelList[index]).zfill(2))
 
 def removeNonAscii(s):
 	filtered = "".join(filter(lambda x: ord(x)<128, s))
