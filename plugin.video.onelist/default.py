@@ -5,14 +5,13 @@ import xbmcplugin,xbmcgui,xbmcaddon
 
 addon = xbmcaddon.Addon()
 BASE=addon.getSetting('M3U')
-header_string='Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'
+header_string='Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0'
 
 def settings():
     xbmcaddon.Addon().openSettings()
 
 def INDEX_CHANNELS():
     url=BASE
-    req=urllib2.Request(url)
     req=urllib2.Request(url)
     req.add_header('User-Agent',header_string)
     response=urllib2.urlopen(req)
@@ -41,12 +40,32 @@ def get_params():
     return param
 
 def addLink(name,url,iconimage):
-    ok=True
-    liz=xbmcgui.ListItem(name,iconImage="DefaultVideo.png",thumbnailImage=iconimage)
-    liz.setInfo(type="Video",infoLabels={"Title":name})
-    liz.setProperty('IsPlayable','true')
-    ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
-    return ok
+    if url.startswith('acestream://'):
+        url = 'plugin://program.plexus/?mode=1&url={0}&name={1}&iconimage={2}'.format(url, name, iconimage)
+        liz=xbmcgui.ListItem(name,iconImage="DefaultVideo.png",thumbnailImage=iconimage)
+        liz.setInfo(type="Video",infoLabels={"Title":name})
+        liz.setProperty('IsPlayable','true')
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
+    elif url.startswith('sop://'):
+        url = 'plugin://program.plexus/?mode=2&url={0}&name={1}&iconimage={2}'.format(url, name, iconimage)
+        liz=xbmcgui.ListItem(name,iconImage="DefaultVideo.png",thumbnailImage=iconimage)
+        liz.setInfo(type="Video",infoLabels={"Title":name})
+        liz.setProperty('IsPlayable','true')
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
+    elif '.ts' in url:
+        url = 'plugin://plugin.video.f4mTester/?url={0}&streamtype=TSDOWNLOADER&name={1}'.format(url, name, iconimage)
+        liz=xbmcgui.ListItem(name,iconImage="DefaultVideo.png",thumbnailImage=iconimage)
+        liz.setInfo(type="Video",infoLabels={"Title":name})
+        liz.setProperty('IsPlayable','true')
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
+    else:
+        ok=True
+        liz=xbmcgui.ListItem(name,iconImage="DefaultVideo.png",thumbnailImage=iconimage)
+        liz.setInfo(type="Video",infoLabels={"Title":name})
+        liz.setProperty('IsPlayable','true')
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
+        return ok
+		
 
 def addDir(name,url,mode,iconimage):
     u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)

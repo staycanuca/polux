@@ -15,12 +15,16 @@ or
 #EXTINF:0,Channel Name
 https://link-to-channel-stream
 
+Addon suport:
 
+acestream  - Plexus
+sopcast - Plexus
+.ts streams - f4mTester
 
 
 How to install:
 
-1. Copy the zip file plugin.video.onelist.zip to a directory, where Kodi server has access to
+1. Copy the zip file plugin.video.iptvbulgaria.zip to a directory, where Kodi server has access to
 	Windows -> <USERDIR>\AppData\Roaming\XBMC\addons\packages\ 
 	Linux/OpenElec/LibreElec -> ~/.kodi/addons/packages/
 2. Run Kodi and go to System -> Add-ons
