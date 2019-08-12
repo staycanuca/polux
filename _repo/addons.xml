@@ -175,6 +175,27 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.onelist" name="M3U Playlist" version="1.0" provider-name="polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcswift" version="0.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+   <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3</license>
+   <summary lang="en">Only 1 M3U Playlist</summary>
+   <language>en</language>
+   <description lang="en">Only 1 M3U Playlist</description>
+   <disclaimer lang="en">M3U Playlist</disclaimer>
+   <website>M3U Playlist</website>
+   <platform>all</platform>
+   <source>polux</source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.p2ptv" name="p2ptv" version="1.1.1" provider-name="Mario Bălănică">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -446,7 +467,7 @@
 	</extension>
 </addon>
 
-    <addon id="repository.polux" name="Polux Repo" version="1.0.7" provider-name="polux">
+    <addon id="repository.polux" name="Polux Repo" version="1.0.8" provider-name="polux">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>

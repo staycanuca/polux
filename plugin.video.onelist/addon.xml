@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.onelist" name="M3U Playlist" version="1.0" provider-name="polux">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcswift" version="0.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+   <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3</license>
+   <summary lang="en">Only 1 M3U Playlist</summary>
+   <language>en</language>
+   <description lang="en">Only 1 M3U Playlist</description>
+   <disclaimer lang="en">M3U Playlist</disclaimer>
+   <website>M3U Playlist</website>
+   <platform>all</platform>
+   <source>polux</source>
+  </extension>
+</addon>

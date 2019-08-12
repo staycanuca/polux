@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+<category label="Playlist">
+<setting label="M3U" type="text" id="M3U" default="https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u" option="close" action="Container.Refresh(plugin://plugin.video.onelist)" />
+<setting type="action" label="Refresh" option="close" action="Container.Refresh(plugin://plugin.video.onelist)" />
+</category>
+</settings>
