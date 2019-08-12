@@ -1,10 +1,22 @@
-# IPTV Bulgaria
-Video plugin for http://www.iptvbulgaria.com/.
+# M3U Playlist
+Video plugin for Only 1 M3U Playlist.
 
-Readme for Kodi iptvbulgaria plugin created by zinobg [at] gmail.com
+You can use one m3u remote playlist.
 
-I created this add-on to be able to watch online TV via Kodi on my Raspberry pi3. 
-It is tested as well on Kodi for Windows
+M3U structure:
+
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="channel" tvg-logo="channel" group-title="name",Channel Name
+https://link-to-channel-stream
+
+or
+
+#EXTM3U
+#EXTINF:0,Channel Name
+https://link-to-channel-stream
+
+
+
 
 How to install:
 
@@ -13,5 +25,5 @@ How to install:
 	Linux/OpenElec/LibreElec -> ~/.kodi/addons/packages/
 2. Run Kodi and go to System -> Add-ons
 3. From Add-ons menu select -> Install from zip file
-4. Select the zip file plugin.video.iptvbulgaria.zip
-5. IPTV BULGARIA add-on will appear in the list of video add-on
+4. Select the zip file plugin.video.onelist.zip
+5. M3U playlist add-on will appear in the list of video add-on
