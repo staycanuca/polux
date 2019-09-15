@@ -24,11 +24,11 @@ def module_tree(name,url,iconimage,mode,parser,parserfunction):
     
 def tron():
     conteudo=clean(get_page_source('http://m.tvron.net'))
-    blogpost = re.findall('<div class="fullc" id=cc0><div class=mobilc id="cm1">(.+?)<div class="fullc dn"', conteudo, re.DOTALL)
+    blogpost = re.findall('<div class="fullc" id=cc0>(.+?)</div>', conteudo, re.DOTALL)
     if blogpost:
-        listagem=re.compile('<a href="(.+?)" class=".+?" title=".+?" id="c-(.+?)">').findall(blogpost[0])
+        listagem=re.compile('href="(.+?)" class=".+?" title="(.+?)"').findall(blogpost[0])
         for urllist,titulo in listagem:
-    	    addDir(titulo,urllist,501,'',len(listagem),False,parser="tvronnet",parserfunction="play")
+    	    addDir(titulo,urllist,501,'',len(listagem),True,parser="tvronnet",parserfunction="play")
 
 def tron_play(name,url):
     conteudo=clean(get_page_source('http://m.tvron.net' + url))
@@ -46,7 +46,7 @@ def tron_play(name,url):
     			ender.append(address)
     		else: pass
     	if ender and titulo:
-    		index = xbmcgui.Dialog().select('Linkuri ' + name, titulo)
+    		index = xbmcgui.Dialog().select(translate(40023), titulo)
     		if index > -1:
     			nomeescolha=titulo[index]
     			linkescolha=ender[index]
