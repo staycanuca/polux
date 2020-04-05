@@ -266,7 +266,7 @@
 
 <addon id="plugin.video.sopcastro"
        name="SopcastRO"
-       version="1.1.8"
+       version="1.2.0"
        provider-name="polux">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -484,23 +484,23 @@
     </extension>
 </addon>
 
-<addon id="repository.sarsaila" name="Sarsailă's Addons" version="1.0.7" provider-name="Sarsailă">
+<addon id="repository.sarsaila" name="Sarsailă's Addons" version="1.1.0" provider-name="Sarsailă">
     <extension point="xbmc.addon.repository" name="Sarsailă's Addons">
-                <dir>
-                    <info compressed="false">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
-                    <checksum>http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
-                    <datadir zip="true">http://api.bitbucket.org/1.0/repositories/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
-                </dir>
-                <dir>
-                    <info compressed="false">http://api.bitbucket.org/1.0/repositories/xngsrs/myhobby/raw/master/addons.xml</info>
-                    <checksum>http://api.bitbucket.org/1.0/repositories/xngsrs/myhobby/raw/master/addons.xml.md5</checksum>
-                    <datadir zip="true">http://api.bitbucket.org/1.0/repositories/xngsrs/myhobby/raw/master/zips/</datadir>
-                </dir>
-                <dir>
-                    <info compressed="false">https://raw.githubusercontent.com/xngsrs/myhobby/master/addons.xml</info>
-                    <checksum>https://raw.githubusercontent.com/xngsrs/myhobby/master/addons.xml.md5</checksum>
-                    <datadir zip="true">https://github.com/xngsrs/myhobby/raw/master/zips/</datadir>
-                </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/xngsrs/myhobby/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/xngsrs/myhobby/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/xngsrs/myhobby/raw/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://bitbucket.org/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml</info>
+            <checksum>https://bitbucket.org/DiMartino/myshows.me-kodi-repo/raw/default/addons.xml.md5</checksum>
+            <datadir zip="true">https://bitbucket.org/DiMartino/myshows.me-kodi-repo/raw/default/repo/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://bitbucket.org/xngsrs/myhobby/raw/master/addons.xml</info>
+            <checksum>https://bitbucket.org/xngsrs/myhobby/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://bitbucket.org/xngsrs/myhobby/raw/master/zips/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Install Addons from Sarsa repo</summary>

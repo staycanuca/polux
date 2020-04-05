@@ -16,17 +16,17 @@ from utils.directoryhandle import *
 import acestream as ace
 import sopcast as sop
 
-base_url = 'http://m.tvron.net/'
+base_url = 'https://m.tvron.net/romanesti/'
 
 def module_tree(name,url,iconimage,mode,parser,parserfunction):
 	if not parserfunction: tron()
 	elif parserfunction == 'play': tron_play(name,url)
     
 def tron():
-    conteudo=clean(get_page_source('http://m.tvron.net'))
-    blogpost = re.findall('<div class="fullc" id=cc0>(.+?)</div>', conteudo, re.DOTALL)
+    conteudo=clean(get_page_source('https://m.tvron.net/romanesti/'))
+    blogpost = re.findall('<div class="hh full">(.+?)<div class="full" id="catromanesti">', conteudo, re.DOTALL)
     if blogpost:
-        listagem=re.compile('href="(.+?)" class=".+?" title="(.+?)"').findall(blogpost[0])
+        listagem=re.compile('<a href="(.+?)" class="icon.+?span title="(.+?)"').findall(blogpost[0])
         for urllist,titulo in listagem:
     	    addDir(titulo,urllist,501,'',len(listagem),True,parser="tvronnet",parserfunction="play")
 
@@ -36,7 +36,7 @@ def tron_play(name,url):
     if blogpost:
     	ender=[]
     	titulo=[]
-    	match = re.compile('<a class="server" href="(.+?)" target="_blank"><img src=".+?">(.+?)</a>').findall(blogpost[0])
+    	match = re.compile('class="server" href="(.+?)" ><img src=".+?">(.+?)</a>').findall(blogpost[0])
     	for address,nume in match:
     		if "sop://" in address:
     			titulo.append('' + nume + ' - ' + name +' sopcast link')
